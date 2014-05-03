@@ -1,0 +1,51 @@
+$font-primary: "Museo Sans", Helvetica, sans;
+$font-weight-light: 100;
+$font-weight-normal: 300;
+$font-weight-bold: 500;
+$font-weight-thick: 700;
+
+
+/**
+* A mixin for sizing fonts, takes the font size and line-heights in em
+* Example usage: @include sizeFont(30, 40);
+*/
+@mixin sizeFont($font-size, $line-height) {
+	//Size of required font in em
+	font-size: em($font-size);
+
+	//Size of line-height in em
+	line-height: em($line-height);
+}
+
+body {
+	font-family: $font-primary;
+	font-weight: $font-weight-normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: $font-primary $font-weight-light;
+}
+
+
+h1 {
+	@include sizeFont(100, 120);
+}
+h2 {
+	@include sizeFont(35, 40);
+}
+h3 {
+	@include sizeFont(25, 30)
+}
+h4 {
+	@include sizeFont(20, 25);
+}
+h5 {
+	@include sizeFont(15, 20);
+}
+h6 {
+	@include sizeFont(10, 15);
+}
+p {
+	line-height: 150%;
+	margin-bottom: em(30);
+}

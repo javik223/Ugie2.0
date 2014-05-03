@@ -1,0 +1,72 @@
+@import "compass";
+@import "compass/utilities/text/replacement";
+@import "bourbon";
+@import "neat";
+@import "compass/reset";
+@import "partials/typography";
+@import "partials/layout";
+@import "partials/colors";
+@import "partials/modules";
+
+body {
+	background: image-url("background.jpg") no-repeat;
+	background-size: 100%;
+}
+.header {
+	@extend .outer-container;
+	background-color:rgba(255, 255, 255, 0.9);
+
+	.logo {
+		float: left;
+		@include transform( translateX(-20px) );
+	}
+
+	.pseudo-logo {
+		color: transparent;
+		width: 0;
+		height: 0;
+	}
+}
+.header nav {
+
+	@include pad( 0 );
+
+	li {
+		@include inline-block;
+	}
+
+	a {
+		@include sizeFont(24, 48);
+		color: $primary-color;
+		text-decoration: none;
+		padding: em(20) em(10) 0;
+		font-weight: $font-weight-bold;
+		@include inline-block;
+	}
+}
+.header .side-nav {
+	float: right;
+	@include omega(0);
+	text-align: right;
+	font-size: em(12);
+}
+.side-nav .signups {
+
+	span {
+		padding: em(20) 0 0 em(10);
+		@include inline-block;
+	}
+
+	a {
+		text-decoration: none;
+		color: $primary-color;
+		font-weight: $font-weight-bold;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.slider_item {
+	
+}

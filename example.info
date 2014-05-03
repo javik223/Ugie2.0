@@ -1,0 +1,8 @@
+name = Example
+description = Theme for Ugie Carnival 2014 Website
+screenshot = screenshot.jpg
+version = 1.0
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = style.css
+stylesheets[print][] = print.css

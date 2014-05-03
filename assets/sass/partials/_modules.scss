@@ -1,0 +1,8 @@
+button, .button {
+	padding: em(10) em(20);
+	border: none;
+	backgorund: auto;
+}
+.button-alpha {
+	background-color: darken($primary-color, 30%);
+}
