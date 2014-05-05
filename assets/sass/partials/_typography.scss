@@ -20,8 +20,11 @@ $font-weight-thick: 700;
 body {
 	font-family: $font-primary;
 	font-weight: $font-weight-normal;
+	line-height: 150%;
 }
-
+strong {
+	font-weight: $font-weight-bold;
+}
 h1, h2, h3, h4, h5, h6 {
 	font: $font-primary $font-weight-light;
 }
@@ -29,9 +32,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	@include sizeFont(100, 120);
+
+	@include media( $mobile ) {
+		@include sizeFont(60, 80);
+	}
 }
 h2 {
-	@include sizeFont(35, 40);
+	@include sizeFont(35, 20);
+
+	@include media( $mobile ) {
+		@include sizeFont(30, 30);
+	}
 }
 h3 {
 	@include sizeFont(25, 30)
@@ -48,4 +59,7 @@ h6 {
 p {
 	line-height: 150%;
 	margin-bottom: em(30);
+}
+input {
+	font-family: $font-primary;
 }

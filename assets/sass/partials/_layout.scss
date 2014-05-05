@@ -53,6 +53,11 @@
 */
 .inner-wrapper {
 	@include outer-container;
+
+	@include media($small-tablet) {
+		padding-right: 4%;
+		padding-left: 4%;
+	}
 }
 /**
 * A block with a single row of 12 columns

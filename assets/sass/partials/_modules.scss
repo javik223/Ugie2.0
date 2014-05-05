@@ -1,8 +1,50 @@
 button, .button {
 	padding: em(10) em(20);
 	border: none;
-	backgorund: auto;
+	background: $gray;
+      @include border-radius( em(5) );
+      @include transition ( all 0.3s ease-in-out );
 }
 .button-alpha {
-	background-color: darken($primary-color, 30%);
+	font-size: em(18);
+}
+//A Little smaller button
+.button-omega {
+      padding-top: em(5);
+      padding-bottom: em(5);
+      border: 1.5px solid $gray;
+      background-color: transparent;
+      font-size: em(14);
+      color: $gray;
+
+      &:hover {
+            background-color: $gray;
+            color: $white;
+      }
+}
+.button-submit {
+      background-color: $secondary-color;
+      color: $white;
+      font-weight: $font-weight-bold;
+      @include sizeFont(13, 20);
+}
+.button-link {
+      cursor: pointer;
+}
+a.button {
+      text-decoration: none;
+}
+input[type="text"], input[type="email"] {
+      width: 300px;
+      max-width: 100%;
+      border: none;
+      padding: em(10) em(10);
+      color: $gray;
+      margin-bottom: em(20);
+      font-size: em(15);
+      font-weight: $font-weight-normal;
+}
+input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
 }

@@ -1,6 +1,7 @@
 @import "compass";
 @import "compass/utilities/text/replacement";
 @import "bourbon";
+@import "grid-settings";
 @import "neat";
 @import "compass/reset";
 @import "partials/typography";
@@ -8,9 +9,17 @@
 @import "partials/colors";
 @import "partials/modules";
 
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
 body {
 	background: image-url("background.jpg") no-repeat;
 	background-size: 100%;
+
+	@include media( $tablet ) {
+		background-size: 120%;
+	}
 }
 .header {
 	@extend .outer-container;
@@ -19,6 +28,16 @@ body {
 	.logo {
 		float: left;
 		@include transform( translateX(-20px) );
+
+		@include media($mobile) {
+			width: 100%;
+			text-align: center;
+
+			img {
+				width: 160px;
+				height: auto;
+			}
+		}
 	}
 
 	.pseudo-logo {
@@ -31,6 +50,10 @@ body {
 
 	@include pad( 0 );
 
+	ul {
+		float: left;
+	}
+
 	li {
 		@include inline-block;
 	}
@@ -42,6 +65,25 @@ body {
 		padding: em(20) em(10) 0;
 		font-weight: $font-weight-bold;
 		@include inline-block;
+
+		@include media($tablet) {
+			padding-right: em(5);
+		}
+
+		@include media( $mobile ) {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+	
+	@include media($tablet) {
+		width: 70%;
+	}
+
+	@include media( $mobile ) {
+		width: 100%;
+		text-align: center;
+		@include sizeFont(10, 30);
 	}
 }
 .header .side-nav {
@@ -49,6 +91,12 @@ body {
 	@include omega(0);
 	text-align: right;
 	font-size: em(12);
+
+	@include media($tablet) {
+		width: 0;
+		height: 0;
+		visibility: hidden;
+	}
 }
 .side-nav .signups {
 
@@ -66,7 +114,469 @@ body {
 			text-decoration: underline;
 		}
 	}
+
+	@include media($tablet) {
+		span {	
+			padding: 0;
+		}
+	}
+}
+/**
+* sub-nav is the meant to be the area below the main navitation bar
+* includes slogan, date and news update
+*/
+.sub-nav {
+	padding: em(40) 0;
+
+	@include media($tablet) {
+		display: none;
+	}
+}
+.news-update {
+	background-color: rgba($secondary-color2, 0.9);
+	padding: em(20);
+	font-weight: $font-weight-normal;
+	font-size: em(18);
+}
+.slogan {
+	float: right;
+	color: $white;
+	margin-right: em(20);
+	font-weight: $font-weight-normal;
+	text-shadow: 0px 0px 250px rgb( 255, 0, 11 );
+
+}
+// Styling for slider on homepage
+.slider {
+	@include transform( translateZ(0) );
+
+	@include media( $tablet ) {
+		margin-top: em(40);
+	}
+
+	@include media( $mobile ) {
+		margin-top: 0;
+	}
+}
+.slider-item {
+	width: 100%;
+	float: left;
+	position: relative;
+	@include transform( translateZ(0) );
+
+	.slider-item-image {
+		float: left;
+
+		img {
+			max-width: 100%;
+
+			@include media( $mobile ) {
+				max-width: 200%;
+				margin: auto auto;
+				@include transform( translateX(-20%) );
+			}
+		}
+
+		@include media( $tablet ) {
+			width: 100%;
+		}
+	}
+	.slider-item-caption {
+		float: left;
+		color: $gray;
+		position: absolute;
+		bottom: em(40);
+		right: 0;
+
+		@include media( $tablet ) {
+			position: relative;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			padding-top: em(10);
+			@include sizeFont(27, 30);
+		}
+
+		@include media( $mobile ) {
+			@include sizeFont(15, 20);
+			font-weight: $font-weight-bold;
+		}
+	}
+}
+// Button configuration for Event Date
+.button-td {
+	float: right;
+	background-color: rgba(adjust-hue($secondary-color, 20%), 0.9);
+	color: $black;
+	text-transform: uppercase;
 }
 .slider_item {
+	width: 100%;
+}
+.media-nav {
+	.button {
+		float: right;
+		margin-top: em(40);
+	}
+}
+
+.section-head {
+	margin: em(20) auto;
+}
+/**
+* Styling for media navigation links 
+* Items are light gray except the .isActive link element that is gray
+**/
+.media-nav_links {
+
+	> li {
+		float: left;
+		padding-right: em(20);
+
+		@include media( $mobile ) {
+			text-align: center;
+			margin: auto auto;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: lighten($gray, 20%);
+		@include sizeFont(32.5, 32.5);
+		@include inline-block;
+		@include transition ( all .3s ease-in-out );
+
+		&.isActive {
+			color: $gray;
+		}
+
+		&:hover {
+			color: rgba(adjust-hue($primary-color, 20%), 0.6);
+			@include transform( scale(1.1) );
+		}
+
+		@include media( $mobile ) {
+			@include sizeFont(20, 20);
+			text-align: center;
+		}
+	}
+}
+/**
+* Featured Media content on homepage
+*/
+.featured-item{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0.7%;
+
+	img {
+		max-width: 100%;
+		float: left;
+	}
+
+	.featured-top & {
+		width: 32.85%;
+		margin-right: 0.7%;
+
+		&:last-child {
+			margin: 0;
+
+			@include media( $mobile ) {
+				margin: inherit;
+			}
+		}
+
+		@include media( $mobile ) {
+			width: 100%;
+		}
+	}
+
+	.featured-bottom & {
+		width: 43.6%;
+		margin-right: 0.7%;
+
+		&:nth-child(2), &:nth-child(3) {
+			width: 27.5%;
+			@include media( $mobile ) {
+				width: 100%;
+			}
+		}
+		&:nth-child(4) {
+			width: 55.6%;
+
+			@include media( $mobile ) {
+				width: 100%;
+			}
+		}
+
+		@include media( $mobile ) {
+			width: 100%;
+		}
+	}
+}
+.featured-item_caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	//display: none;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(#fc255d, 0.7);
+	padding: em(20);
+	color: $white;
 	
+	//Heading of Featured item that shows the media type of the item.
+	//Can be Photo, Video, or others.
+	.featured-item_caption_heading {
+		font-weight: $font-weight-bold;
+		font-size: em(17);
+	}
+
+	p {
+		position: absolute;
+		@include sizeFont(25, 20);
+		bottom: 0;
+		font-weight: $font-weight-light;
+		padding-right: em(20);
+	}
+
+	@include media( $tablet ) {
+		p {
+			@include sizeFont(16, 20);
+		}
+	}
+}
+.no-margin {
+	margin: 0 !important;
+}
+/**
+* @Featured News item 
+*/
+.featured-news {
+	@include media( $tablet ) {
+		width: 100% !important;
+		margin-right: 0;
+	}
+}
+.featured-news_item {
+	width: 100%;
+	float: left;
+	margin-bottom: em(20);
+	padding-bottom: em(20);
+	padding-top: em(20);
+	border-bottom: 1px solid lighten($gray, 35%);
+
+
+	p {
+		margin-bottom: em(10);
+	}
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+.featured-news_item_image {
+	width: 40%;
+	float: left;
+
+	img {
+		width: 100%;
+	}
+
+	@include media( $tablet ) {
+		width: 25%;
+	}
+}
+.featured-news_item_content {
+	width: 60%;
+	@include box-sizing(border-box);
+	padding: 0 em(20);
+	float: left;
+
+	@include media( $tablet ) {
+		width: 75%;
+	}
+}
+.featured-news_item_heading{
+	font-weight: $font-weight-bold;
+	color: $secondary-color;
+
+	&.featured-news_item_heading-alternate {
+		color: $secondary-color2;
+	}
+}
+.connects, .updates {
+	@include media( $tablet ) {
+		@include span(5);
+		float: left;
+		margin-right: 0;
+	}
+
+	@include media( $tablet ) {
+		@include span(10);
+	}
+}
+.connect, .update {
+	width: 100%;
+	float: left;
+	padding: em(20) em(40);
+	background-color: lighten($gray, 37%);
+	margin-bottom: em(20);
+}
+.connect-instagram {
+	background-color: $blue;
+	color: $white;
+	font-weight: $font-weight-bold;
+
+	img {
+		max-width: 100%;
+	}
+}
+.connect-social {
+	font-weight: $font-weight-normal;
+	color: darke($gray, 5%);
+}
+.update {
+	padding: em(20) em(20);
+	color: darken($gray, 5%);
+
+	h4 {
+		font-weight: $font-weight-bold;
+		margin-bottom: em(20);
+	}
+}
+.update-twitter {
+	background-color: $blue;
+	color: $white;
+
+	a {
+		font-weight: $font-weight-bold;
+		text-decoration: none;
+		color: lighten(adjust-hue($blue, -10%), 25%);
+	}
+}
+
+.featured-ad {
+	margin-top: em(20);
+	border-top: 1px solid lighten($gray, 35%);
+	border-bottom: 1px solid lighten($gray, 35%);
+	padding-top: em(20);
+	padding-bottom: em(20);
+
+	img {
+		max-width: 100%;
+	}
+}
+.sponsors {
+	padding: em(60) 0;
+	color: $gray;
+
+	h4, img {
+		float: left;
+		margin-right: em(20);
+	}
+
+	h4 {
+		margin-top: em(10);
+
+		@include media( $tablet ) {
+			@include sizeFont(15, 20);
+		}
+
+		@include media( $mobile ) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	img {
+		@include media( $tablet ) {
+			max-width: 220px;
+			height: auto;
+		}
+
+		@include media( $mobile ) {
+			max-width: 150px;
+			margin-bottom: em(20);
+		}
+	}
+
+	@include media( $tablet ) {
+		padding-left: em(40);
+	}
+}
+.footer_nav {
+
+	ul {
+		float: left;
+		margin-right: em(40);
+		margin-bottom: em(20);
+
+		@include media( $mobile ) {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $gray;
+	}
+	//prominent footer link
+	.item_p {
+		font-weight: $font-weight-bold;
+		color: lighten($secondary-color, 20%);
+
+		a {
+			color: lighten($secondary-color, 20%);
+		}
+	}
+
+	@include media( $tablet ) {
+		@include span(8);
+	}
+
+	@include media( $mobile ) {
+		@include span(12);
+		@include sizeFont(16, 26);
+	}
+}
+.footer_social, .footer_contact-info{
+	text-align: right;
+	@include sizeFont(14, 15);
+	color: $gray;
+
+	.footer_contact-info-heading {
+		font-weight: $font-weight-bold;
+		color: $secondary-color;
+		font-size: em(18);
+	}
+
+	@include media( $tablet ) {
+		width: 100%;
+	}
+}
+.footer_copyright {
+	padding: em(40) 0;
+	font-size: em(15);
+	color: $gray;
+}
+
+.footer_disclaimer {
+	color: $gray;
+	border-top: 1px solid lighten($gray, 35%);
+	padding-top: em(30);
+	padding-bottom: em(100);
+
+	p {
+		@include sizeFont(12, 25);
+
+		@include media( $tablet ) {
+			@include sizeFont(8, 25);
+		}
+	}
+}
+.footer_site-credits {
+	float: right;
+	text-align: right;
 }
