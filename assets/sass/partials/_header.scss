@@ -1,0 +1,30 @@
+.header {
+      background-color:rgba(255, 255, 255, 0.9); 
+      width: 100%;
+      overflow-x: hidden;
+
+      .pseudo-logo {
+            color: transparent;
+            width: 0;
+            height: 0;
+      }
+      .logo {
+            text-align: center;
+
+             @include grid-column(
+                  $columns: 6,
+                  $center: true
+            );
+
+             @media #{$medium-up} { 
+                  @include grid-column(
+                        $columns: 3,
+                        $center: false
+                  );
+            }
+
+            @media #{$medium-only} {
+                  margin-bottom: rem-calc(-100);
+            }
+      }
+}

@@ -1,0 +1,51 @@
+/**
+* Featured Media content on homepage
+*/
+.featured-item{
+      position: relative;
+      overflow: hidden;
+      color: $white;
+      border: 3px solid $white;
+
+      img {
+            float: left;
+            margin-right: 0;
+            padding-right: 0;
+            max-width: 100%;
+      }
+
+      @media #{$small-only} {
+            border-right: none;
+            border-left: none;
+            border-top: none;
+      }
+}
+.featured-item_caption {
+      position: absolute;
+      //display: none;
+      z-index: 1000;
+      height: 100%;
+      background-color: rgba(#fc255d, 0.7);
+      color: $white;
+      padding: em(20) em(40);
+      width: 100%;
+      float: left;
+      visibility: hidden;
+      
+      //Heading of Featured item that shows the media type of the item.
+      //Can be Photo, Video, or others.
+      h5 {
+            font-weight: $font-weight-bold;
+            font-size: em(17);
+            color: $white;
+      }
+
+      p {
+            position: absolute;
+            font-size: rem-calc(20);
+            bottom: 0;
+            font-weight: $font-weight-normal;
+            padding-right: em(20);
+            line-height: 1.4;
+      }
+}

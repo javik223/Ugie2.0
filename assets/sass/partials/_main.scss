@@ -1,0 +1,12 @@
+.main-content {
+            @include grid-row();
+            background-color: $white;
+            
+            padding-left: em(20);
+            padding-right: em(20);
+
+            @media #{$large-up} {
+                  padding-left: 0;
+                  padding-right: 0;
+            }
+}

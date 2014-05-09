@@ -1,0 +1,88 @@
+/**
+* Styling for media navigation links 
+* Items are light gray except the .isActive link element that is gray
+**/
+.media-nav {
+      padding: rem-calc(30) 0;
+
+      @media #{$medium-only} {
+           padding: em(20);
+      }
+}
+.media-nav_links {
+      margin-left: 0;
+      text-align: center;
+
+      @include grid-column(
+            $columns: 8,
+            $collapse: true
+      );
+
+      > li {
+            @include inline-block;
+            padding-right: rem-calc(20);
+
+            @media #{$small-only} {
+                  padding-right: rem-calc(10);
+                  @include inline-block;
+            }
+
+            @media #{$medium-up} {
+                  float: left;
+            }
+      }
+      a {
+            text-decoration: none;
+            color: lighten($gray, 20%);
+            @include inline-block;
+            @include transition ( all .3s ease-in-out );
+            font-size: rem-calc(40);
+
+            &.isActive {
+                  color: $gray;
+            }
+
+            &:hover {
+                  color: rgba(adjust-hue($primary-color, 20%), 0.6);
+                  @include transform( scale(1.1) );
+            }
+
+            @media #{$small-only} {
+                  font-size: rem-calc(18);
+            }
+
+            @media #{$medium-only} {
+                  font-size: rem-calc(30);
+            }
+      }
+
+      @media #{$small-only} {
+            @include grid-column(
+                  $columns: 12,
+                  $center: true
+            )
+      }
+}
+.media-nav_view-media {
+            float: right;
+            text-align: right;
+            margin-top: em(10);
+
+            @include grid-column(
+                  $columns: 6,
+                  $center: true
+            );
+
+            @media #{$medium-up} {
+                  @include grid-column(
+                        $columns: 3,
+                        $float: right,
+                        $last-column: true
+                  );
+            }
+
+            button {
+                  width: 100%;
+            }
+
+      }

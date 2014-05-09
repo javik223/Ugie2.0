@@ -1,0 +1,127 @@
+.sponsors {
+      padding: em(60) em(20);
+      color: $gray;
+      background-color: $white;
+
+      h4, img {
+            float: left;
+            margin-right: em(10);
+            color: $gray;
+
+            @media #{$medium-up} {
+                  margin-right: em(30);
+            }
+      }
+
+      h4 {
+            margin-top: em(10);
+      }
+
+      img {
+      }
+      @media #{$large-up} {
+            padding-right: 0;
+            padding-left: 0;
+      }
+}
+.footer {
+      font-weight: $font-weight-normal;
+      background-color: $white;
+}
+.footer_nav {
+
+      ul {
+            float: left;
+            margin-right: em(40);
+            margin-bottom: em(20);
+
+            @media #{$small-only} {
+                  font-size: rem-calc(12);
+                  margin-right: em(0);
+            }
+
+            @media #{$medium-only} {
+                  font-size: rem-calc(14);
+                  margin-right: em(0);
+            }
+      }
+
+      a {
+            text-decoration: none;
+            color: $gray;
+      }
+      //prominent footer link
+      .item_p {
+            font-weight: $font-weight-bold;
+            color: lighten($secondary-color, 20%);
+
+            a {
+                  color: lighten($secondary-color, 20%);
+            }
+      }
+}
+.footer_social, .footer_contact-info{
+      text-align: right;
+      color: $gray;
+
+      .footer_contact-info-heading {
+            font-weight: $font-weight-bold;
+            color: $secondary-color;
+            font-size: em(18);
+      }
+
+ @media #{$small-only} {
+             font-size: rem-calc(15);
+            text-align: center;
+
+            p {
+                  font-size: rem-calc(13);
+            }
+     }
+}
+.footer_contact-info {
+     @media #{$medium-only} {
+            font-size: rem-calc(15);
+            padding-right: em(30);
+
+            p {
+                  font-size: rem-calc(13);
+            }
+     }
+}
+.footer_copyright {
+      padding: em(40) 0;
+      font-size: em(15);
+      color: $gray;
+      font-size: rem-calc(12);
+}
+
+.footer_disclaimer {
+      color: $gray;
+      border-top: 1px solid lighten($gray, 35%);
+      padding-top: em(30);
+      padding-bottom: em(100);
+
+      p {
+            font-size: rem-calc(9);
+      }
+}
+.footer_copyright, .footer_disclaimer {
+       @media #{$small-only} {
+          padding: em(40) em(20);
+          border-top: 1px solid lighten($gray, 35%);
+
+      }
+}
+.footer_site-credits {
+      float: right;
+      text-align: right;
+
+      @media #{$small-only} {
+            text-align: center;
+
+            img, span {
+                  float: none;
+            }
+      }
+}

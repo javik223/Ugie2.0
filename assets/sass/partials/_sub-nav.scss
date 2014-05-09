@@ -1,0 +1,78 @@
+/**
+* sub-nav is the meant to be the area below the main navitation bar
+* includes slogan, date and news update
+*/
+@import "compass/css3";
+
+.sub-nav {
+      padding: em(40) 0;
+      overflow: hidden;
+
+      @media #{$small-only} {
+            display: none;
+      }
+
+      @media #{$medium-only} {
+            padding-top: em(20);
+            padding-bottom: em(20);
+      }
+      
+      //Orbit banner that shows the latest news content
+      .news-update {
+            background-color: $secondary-color2;
+            $font-weight: $font-weight-bold;
+            line-height: 1.4;
+
+            @include grid-column(
+                  $columns: 4,
+                  $collapse: true
+            );
+
+            div {
+                  padding: em(20);
+                  color: darken($gray, 20%);
+                  font-size: rem-calc(14);
+            }
+
+            .icon-arrow-right {
+                  float: left;
+                  font-size: rem-calc(60);
+                  color: $white;
+            }
+      }
+      //Event Slogan "A festivity of peace & joy"
+      .slogan {
+            text-align: right;
+            @include inline-block;
+            color: $white;
+            margin-right: em(20);
+            font-weight: $font-weight-bold;
+            @include text-shadow(rgba($primary-color, 0.9) 0px 0px 100px 100px, rgba($primary-color, 0.9) 0px 0px 100px 100px, rgba($primary-color, 0.9) 0 0 100px 100px 0);
+
+
+            @include grid-column(
+                  $columns: 5,
+                  $collapse: true
+            );
+
+            @media #{$medium-only} {
+                  font-size: em(20);
+                  margin-top: em(20);
+            }
+      }
+      //Date & Time of event
+      .dt {
+            text-align: right;
+
+            @include grid-column(
+                  $columns: 2,
+                  $collapse: true,
+                  $float: right,
+                  $last-column: true
+            );
+
+            .button {
+                   font-size: rem-calc(20);
+            }
+      }
+}

@@ -1,0 +1,48 @@
+.side-nav {
+      text-align: right;
+      font-size: rem-calc(12);
+      float: right;
+
+
+      @media #{$small-only} {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+      }
+
+      @media #{$medium-only} {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+      }
+
+
+      @media #{$large-up} {
+            @include grid-column(
+                  $columns: 3,
+                  $float: right
+            );
+
+            margin-top: em(0);
+      }
+
+      .signups {
+            span {
+                  padding: rem-calc(20) 0 0 rem-calc(10);
+                  @include inline-block;
+            }
+
+            a {
+                  text-decoration: none;
+                  color: $primary-color;
+                  font-weight: $font-weight-bold;
+
+                  &:hover {
+                        text-decoration: underline;
+                  }
+            }
+      }
+      .social {
+            padding-top: rem-calc(15);
+      }
+}

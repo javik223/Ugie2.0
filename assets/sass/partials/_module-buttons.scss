@@ -1,0 +1,19 @@
+.button-secondary {
+      color: $white;
+      background-color: rgba($secondary-color, 0.8);
+      font-weight: $font-weight-bold;
+
+      &:hover {
+            background-color: darken($secondary-color, 5%);
+      }
+
+}
+.button-light {
+      color: $gray;
+      background-color: lighten($secondary-color, 40%);
+      font-weight: $font-weight-bold;
+
+      &:hover {
+            background-color: lighten($secondary-color, 20%);
+      }
+}

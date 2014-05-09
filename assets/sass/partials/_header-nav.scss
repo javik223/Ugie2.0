@@ -1,0 +1,62 @@
+.header .nav {
+      ul {
+            margin: 0;
+            padding-bottom: em(20);
+            text-align: center;
+
+            @include grid-column(
+                  $columns: 11,
+                  $center: true
+            );
+
+            @media #{$medium-up} {
+                  text-align: left;
+                  margin-right: 0;
+                  padding-right: 0;
+            }
+
+            @media #{$medium-only} {
+                  margin-left: 0;
+                  margin-right: 0;
+                  padding-left: 0;
+            }
+      }
+
+      li {
+            @include inline-block;
+      }
+
+      a {
+            font-size: rem-calc(24);
+            color: $primary-color;
+            text-decoration: none;
+            padding: rem-calc(30) rem-calc(10) 0;
+            font-weight: $font-weight-bold;
+            @include inline-block;
+
+            @media #{$small-only} {
+                  font-size: rem-calc(15);
+                  padding-right: 0;
+                  padding-top: rem-calc(10);
+                  line-height: 1em;
+            }
+      }
+
+      li:first-child a {
+            padding-left: 0;
+      }
+      li:last-child a {
+            padding-right: 0;
+      }
+      @media #{$medium-only} {
+             @include grid-column(
+                  $columns: 9
+            );
+            padding-right: em(20);
+      }
+      @media #{$large-up} {
+            @include grid-column(
+                  $columns: 6
+            );
+      }
+}

@@ -1,0 +1,72 @@
+.connects {
+      margin: 0;
+}
+.connect, .update {
+      width: 100%;
+      float: left;
+      background-color: lighten($gray, 37%);
+      margin-bottom: em(20);
+
+      @include grid-column(
+            $columns: 12,
+            $center: true
+      );
+
+      @media #{$medium-only} {
+            p { 
+                  font-size: em(13);
+            }
+      }
+}
+.connect {
+      padding: em(40);
+}
+.connect-instagram {
+      background-color: $blue;
+      color: $white;
+      font-weight: $font-weight-bold;
+
+      img {
+            max-width: 100%;
+
+            @media #{$small-only} {
+                  padding-left: em(40);
+                  padding-right: em(40);
+            }
+      }
+
+      @media #{$small-only} {
+            padding: em(20) em(40);
+      }
+}
+.connect-social {
+      font-weight: $font-weight-normal;
+      color: darken($gray, 5%);
+      text-align: center;
+
+      span {
+            padding: em(3);
+      }
+}
+.update {
+      padding: em(20) em(40);
+      color: darken($gray, 5%);
+
+      h4 {
+            font-weight: $font-weight-bold;
+            margin-bottom: em(20);
+      }
+}
+.update-twitter {
+      background-color: $blue;
+      color: $white;
+
+      a {
+            font-weight: $font-weight-bold;
+            text-decoration: none;
+            color: lighten(adjust-hue($blue, -10%), 25%);
+      }
+      .icon-twitter, h4 {
+            color: $white;
+      }
+}

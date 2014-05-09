@@ -1,0 +1,91 @@
+// Styling for slider on homepage
+.slider {
+      @include transform( translateZ(0) );
+      position: relative;
+
+      .slider-controls {
+            font-size: rem-calc(40);
+            padding-top: rem-calc(40);
+            text-align: center;
+
+            span {
+                  pointer: cursor;
+            }
+
+            @media #{$large-up} {
+                  position: absolute;
+                  right: 0;
+                  bottom: 0;
+
+                  @include grid-column(
+                        $columns: 5
+                  );
+            }
+      }
+}
+.slider-item {
+      width: 100%;
+      float: left;
+      position: relative;
+      @include transform( translateZ(0) );
+      overflow: hidden;
+
+      .slider-item-image {
+            float: left;
+
+
+            @media #{$large-up} {
+                  @include grid-column(
+                        $columns: 9,
+                        $collapse: true
+                  );
+                  padding-right: em(30);
+            }
+
+            @media #{$small-only} {
+                  width: 200%;
+                  @include transform(translateX(-20%));
+            }
+      }
+      .slider-item-caption {
+            float: left;
+            color: $gray;
+            position: absolute;
+            bottom: em(40);
+            right: 0;
+            font-weight: $font-weight-normal;
+            line-height: 1.2;
+            padding-left: rem-calc(25);
+            @include grid-column(
+                  $columns: 3                  
+            );
+
+            @media #{$small-only}{
+                  position: relative;
+                  bottom: 0;
+
+                  @include grid-column(
+                        $columns: 11,
+                        $center: true
+                  );
+                  float: left;
+                  text-align: center;
+                  padding-top: em(15);
+                  font-size: rem-calc(30);
+            }
+
+            @media #{$medium-only}{
+                  position: relative;
+                  bottom: 0;
+
+                  @include grid-column(
+                        $columns: 11,
+                        $center: true
+                  );
+                  float: left;
+                  text-align: center;
+                  padding-top: rem-calc(25);
+                  font-size: rem-calc(30);
+            }
+      }
+}

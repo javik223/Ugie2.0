@@ -1,0 +1,79 @@
+@import "compass/reset";
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,700);
+@import "bourbon";
+@import "partials/colors";
+@import "partials/typography";
+@import "settings";
+@import "foundation/components/grid";
+@import "foundation/components/buttons";
+@import "foundation/components/forms";
+@import "foundation/components/type";
+@import "partials/icon-fonts";
+
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+html {
+      width: 100%;
+      overflow-x: hidden;
+}
+body {
+      height: auto;
+      overflow: hidden;
+      background: image-url("background.jpg") no-repeat top center; 
+      background-size: 100%;
+}
+.emt{
+      margin-top: em(20);
+}
+
+@import "partials/header";
+@import "partials/header-nav";
+@import "partials/header-side-nav";
+@import "partials/slider";
+@import "partials/sub-nav";
+@import "partials/media-nav";
+@import "partials/main";
+@import "partials/featured-media";
+@import "partials/featured-news";
+@import "partials/connects-updates";
+@import "partials/home-featured-ad";
+@import "partials/footer";
+
+@import "partials/module-buttons";
