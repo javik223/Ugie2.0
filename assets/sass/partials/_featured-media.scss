@@ -19,6 +19,12 @@
             border-left: none;
             border-top: none;
       }
+
+      //&.isActive {
+       //    .featured-item_caption {
+        //          display: block;
+         //  }
+      //}
 }
 .featured-item_caption {
       position: absolute;
@@ -30,7 +36,7 @@
       padding: em(20) em(40);
       width: 100%;
       float: left;
-      visibility: hidden;
+      opacity: 0;
       
       //Heading of Featured item that shows the media type of the item.
       //Can be Photo, Video, or others.

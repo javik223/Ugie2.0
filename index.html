@@ -6,6 +6,8 @@
         <title>Ugie Website</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="/assets/js/owlcarousel/owl.carousel.css">-->
+    <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
     <link rel="stylesheet" href="/assets/css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
@@ -66,7 +68,8 @@
     
     <!-- Slider for homepage. This slider contains an image and caption text that changes after a chosen period of time-->
     <div class="slider row collapse js-slider">
-        <div class="slider-item js-slider-item">
+        <div class="slider-wrapper js-slider-wrapper cycle-slideshow" data-cycle-prev=".js-slider-prev" data-cycle-next=".js-slider-next" data-cycle-slides="> div">
+            <div class="slider-item js-slider-item">
             <div class="slider-item-image">
                 <img src="/assets/img/ugie-carnival-street-performance.jpg" alt="Traditional Groups Dancing at Ugie Carnival">
             </div>
@@ -76,10 +79,21 @@
             </h2>
         </div>
 
-        <div class="slider-controls">
-            <span class="icon-arrow-left"></span>
+        <div class="slider-item js-slider-item">
+            <div class="slider-item-image">
+                <img src="/assets/img/ugie-carnival-street-performance2.jpg" alt="Traditional Groups Dancing at Ugie Carnival">
+            </div>
 
-            <span class="icon-arrow-right"></span>
+            <h2 class="slider-item-caption">
+                A Celebration of Fun &amp; Excitement
+            </h2>
+        </div>
+        </div>
+
+        <div class="slider-controls">
+            <span class="icon-arrow-left js-slider-prev"></span>
+
+            <span class="icon-arrow-right js-slider-next"></span>
         </div>
     </div>
     <!--End of Slider -->
@@ -105,7 +119,7 @@
     <!--Featured Media Items Begins-->
 
     <div class="row featured collapse">
-        <div class="featured-item medium-4 column">
+        <div class="featured-item medium-4 column js-fmi">
             <img src="/assets/img/performances-at-ugie.jpg" alt="Performances at the Ugie festival">
 
             <div class="featured-item_caption">
@@ -117,7 +131,7 @@
             </div>
         </div>
 
-        <div class="featured-item medium-4 column">
+        <div class="featured-item medium-4 column js-fmi">
             <img src="/assets/img/performances-at-ugie2.jpg" alt="Performances at the Ugie festival">
 
             <div class="featured-item_caption">
@@ -129,7 +143,7 @@
             </div>
         </div>
 
-        <div class="featured-item medium-4 column ">
+        <div class="featured-item medium-4 column js-fmi">
             <img src="/assets/img/performances-at-ugie3.jpg" alt="Performances at the Ugie festival">
 
             <div class="featured-item_caption">
@@ -143,7 +157,7 @@
     </div>
 
     <div class="row collapse featured">
-        <div class="featured-item medium-5 column ">
+        <div class="featured-item medium-5 column js-fmi">
             <img src="/assets/img/performances-at-ugie4.jpg" alt="Performances at the Ugie festival">
 
             <div class="featured-item_caption">
@@ -157,7 +171,7 @@
 
        <div class="medium-7 columns">
             <div class="row collapse">
-            <div class="featured-item medium-6 column ">
+            <div class="featured-item medium-6 column js-fmi">
                 <img src="/assets/img/performances-at-ugie5.jpg" alt="Performances at the Ugie festival">
 
                 <div class="featured-item_caption">
@@ -169,7 +183,7 @@
                 </div>
             </div>
 
-            <div class="featured-item medium-6 column">
+            <div class="featured-item medium-6 column js-fmi">
                 <img src="/assets/img/performances-at-ugie5.jpg" alt="Performances at the Ugie festival">
 
                 <div class="featured-item_caption">
@@ -181,7 +195,7 @@
                 </div>
             </div>
 
-            <div class="featured-item medium-12 column ">
+            <div class="featured-item medium-12 column js-fmi">
                 <img src="/assets/img/performances-at-ugie6.jpg" alt="Performances at the Ugie festival">
 
                 <div class="featured-item_caption">
@@ -420,9 +434,10 @@
     </div>
 
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script src="/assets/js/min/app-ck.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')</script>
+    <script src="/assets/js/TweenMax.min.js"></script>
+    <script src="/assets/js/cycle2.min.js"></script>
+    <script src="/assets/js/app.js"></script>
 
   </body>
 </html>

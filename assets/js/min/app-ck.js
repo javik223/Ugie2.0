@@ -1,1 +1,2 @@
-$(document).ready(function(){alert("Yes")});
+$(document).ready(function(){function e(e,i){$this=e,$mediaCaption=$this.find("div"),$mediaType=$this.find("h5"),$mediaText=$this.find("p"),i===!1?TweenMax.to($mediaCaption,1,{opacity:0},{delay:1}):(TweenMax.to($mediaCaption,1,{opacity:1}),TweenMax.from($mediaType,1,{scale:1.5,left:1e3,ease:Quint.easeOut}),TweenMax.from($mediaText,.6,{scale:10,rotationY:45,translateX:"100%",ease:Circ.easeOut}))}var i=$(".js-fmi");i.each(function(){$this=$(this),TweenMax.set($this,{perspective:1500}),$this.hover(function(){$this=$(this),e($this)},function(){$this=$(this),e($this,!1)})})});
+//# sourceMappingURL=./app-ck.map

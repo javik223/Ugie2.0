@@ -9,7 +9,8 @@
             text-align: center;
 
             span {
-                  pointer: cursor;
+                 @include inline-block;
+                 cursor: pointer;
             }
 
             @media #{$large-up} {
