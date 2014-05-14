@@ -12,6 +12,7 @@
             margin-right: 0;
             padding-right: 0;
             max-width: 100%;
+            @include transform(scale(1.1));
       }
 
       @media #{$small-only} {

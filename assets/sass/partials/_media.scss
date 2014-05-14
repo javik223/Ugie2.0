@@ -1,0 +1,36 @@
+.media {
+      width: 100%;
+
+      .item {
+            @media #{$medium-up} {
+                  @include grid-column(
+                        $columns: 4
+                  );
+            }
+
+            img {
+                  margin-bottom: em(10);
+            }
+
+            margin-bottom: em(15);
+
+      }
+
+      @media #{$small-only} {
+            padding-left: em(10);
+            padding-right: em(10);
+      }
+}
+.media_featured{
+      @include grid-column(
+            $columns: 12,
+            $collapse: true
+      );
+      margin-bottom: em(30);
+
+      .media_featured_image {
+            padding-left: 0 !important;
+      }
+
+      .media_featured_info {}
+}

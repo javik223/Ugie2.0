@@ -21,15 +21,18 @@ $(document).ready(function()
       });
 
       function showFMI($target, $bool) {
-            $this = $target;
+            var $this = $target,
+            $mediaImage = $this.find('img'),
             $mediaCaption = $this.find('div'),
             $mediaType = $this.find('h5'),
             $mediaText = $this.find('p');
 
             if($bool === false) {
                   TweenMax.to($mediaCaption, 1, {opacity: 0}, {delay: 1});
+                  TweenMax.to($mediaImage, 0.3, {scale: 1.1, opacity: 1});
             }  else {
                   TweenMax.to($mediaCaption, 1, {opacity: 1});
+                  TweenMax.to($mediaImage, 1, {scale: 1, opacity: 1});
                   TweenMax.from($mediaType, 1, {scale: 1.5, left: 1000, ease:Quint.easeOut});
                   TweenMax.from($mediaText, 0.6, {scale: 10, rotationY: 45, translateX: "100%", ease:Circ.easeOut});
             }
