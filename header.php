@@ -28,9 +28,11 @@ function() {
     });
   }
 });</script>-->
-        <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
+    <link rel="stylesheet" href="/assets/js/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/js/owl-carousel/owl.theme.css">
+    <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
     <link rel="stylesheet" href="/assets/css/app.css" />
-    <script src="bower_components/modernizr/min/modernizr-ck.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 

@@ -1,0 +1,13 @@
+.carousel {
+      @include grid-column(
+            $columns: 12,
+            $collapse: true
+      );
+      margin-bottom: em(30);
+      margin-top: em(30);
+      overflow: hidden;
+
+      img {
+            padding-right: em(5);
+      }
+}

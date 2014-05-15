@@ -103,4 +103,38 @@ $mainContent = $(".main-content");
 $mainContent.append(mediaListTemplate($item));
 }
 
+/*function activateCarousel() {
+      $carousel = $(".carousel");
+
+      if($carousel.length > 0) {
+      } 
+}
+
+Modernizr.load({
+
+});
+
+activateCarousel();
+*/
+
+$carousel = $(".carousel");
+$carousel.owlCarousel({
+    autoPlay: 6000, //Set AutoPlay to 3 seconds
+    items: 5,
+    itemsDekstop: [1200, 7],
+    itemsDesktopSmall: [1000, 4],
+    itemsTablet: [768, 4],
+    itemsMobile: [479, 3],
+    //navigation: true,
+    //navigationText : ["prev","next"],
+    scrollPerPage : false,
+    responsive: true,
+    responsiveRefreshRate : 200,
+    responsiveBaseWidth: window,
+    lazyLoad : true,
+    lazyFollow : true,
+    lazyEffect : "fade",
+    autoHeight : false,
+});
+
 });

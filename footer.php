@@ -103,11 +103,12 @@
   <script src="/assets/js/min/LAB.min.js"></script>
   <script>
     $LAB
-    .script("/assets/js/min/jquery.min-ck.js")
-    .script("/assets/js/underscore-min.js")
-    .script("/assets/js/min/TweenMax.min-ck.js").wait()
-    .script("/assets/js/min/cycle2.min-ck.js").wait()
-    .script("/assets/js/min/app-ck.js").wait()
+    .script("/assets/js/min/jquery.min-ck.js").wait()
+    .script("/assets/js/underscore-min.js").wait()
+    .script("/assets/js/min/TweenMax.min-ck.js")
+    .script("/assets/js/min/cycle2.min-ck.js")
+    .script("/assets/js/owl-carousel/owl.carousel.js")
+    .script("/assets/js/min/app-ck.js")
   </script>
   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/assets/js/min/jquery.min-ck.js"><\/script>')</script>

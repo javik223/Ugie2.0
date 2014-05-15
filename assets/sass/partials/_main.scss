@@ -1,9 +1,15 @@
 .main-content {
             @include grid-row();
-            background-color: $white;
+            //background-color: $white;
 
             &.full-width {
                   max-width: 100% !important;
                   background-color: rgba($white, 0.96);
+            }
+
+            &.small-pad {
+                  @media #{$small-up} {
+                       padding: 0 em(10);
+                  }
             }
 }
