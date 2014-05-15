@@ -56,8 +56,12 @@ html {
 body {
       height: auto;
       overflow: hidden;
-      background: image-url("background.jpg") no-repeat top center; 
-      background-size: 100%;
+     
+
+      @media #{$medium-up} {
+            background: image-url("background.jpg") no-repeat top center; 
+            background-size: 100%;
+      }
 }
 .emt{
       margin-top: em(20);

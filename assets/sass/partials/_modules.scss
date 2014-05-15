@@ -8,3 +8,18 @@ h1.page-header {
             font-size: rem-calc(80) !important;
       }
 }
+.load-more {
+      background-color: lighten($gray, 35%);
+      @include grid-column(
+            $columns: 12,
+            $center: true
+      );
+
+      text-align: center;
+      padding: em(80) 0;
+
+      .button {
+            font-size: rem-calc(20);
+            min-width: 300px;
+      }
+}

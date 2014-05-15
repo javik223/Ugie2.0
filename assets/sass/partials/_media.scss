@@ -1,18 +1,47 @@
 .media {
       width: 100%;
+      @include transform(translateZ(0));
+
+      [class^="icon-"], [class*=" icon-"] {
+            position: absolute;
+            font-size: rem-calc(30);
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            color: $white;
+            padding: em(10);
+      }
 
       .item {
-            @media #{$medium-up} {
+            position: relative;
+            background-color: rgba($primary-color, 0.6);
+            overflow: hidden;
+            @include animation(fadeIn 1.0s, ease-in);
+
+            @media #{$medium-only} {
                   @include grid-column(
-                        $columns: 4
+                        $columns: 4,
+                        $collapse: true
                   );
+            }
+            @media #{$large-up} {
+                  @include grid-column(
+                        $columns: 3,
+                        $collapse: true
+                  )
             }
 
             img {
-                  margin-bottom: em(10);
-            }
+                  width: 100%;
+                  opacity: 0.8;
+                  @include transform(scale(1.2));
+                  @include transition ( all 3s ease-out );
 
-            margin-bottom: em(15);
+                  &:hover {
+                       @include transform(scale(1));
+                       opacity: 0.5;
+                  }
+            }
 
       }
 
@@ -20,17 +49,58 @@
             padding-left: em(10);
             padding-right: em(10);
       }
+      .caption {
+           padding: em(10);
+           position: absolute;
+           bottom: em(10);
+           left: 0;
+           color: $white;
+           font-weight: $font-weight-normal;
+      }
 }
-.media_featured{
-      @include grid-column(
-            $columns: 12,
-            $collapse: true
-      );
-      margin-bottom: em(30);
+.media_featured-slider{
+      margin-bottom: em(40);
+      position: relative;
 
-      .media_featured_image {
+      .media_featured-slider_image {
             padding-left: 0 !important;
+            padding-right: 0 !important;
       }
 
-      .media_featured_info {}
+      .media_featured-slider_info {
+            padding: 0 em(20);
+      }
+
+      .media_featured-slider_controls {
+            font-size: rem-calc(40);
+            padding-top: rem-calc(10);
+            text-align: center;
+            z-index: 1000;
+
+            span {
+                 @include inline-block;
+                 cursor: pointer;
+            }
+
+            @media #{$medium-up} {
+                  position: absolute;
+                  right: 0;
+                  bottom: 0;
+                  text-align: left;
+
+                  @include grid-column(
+                        $columns: 4
+                  );
+            }
+      }
+}
+@include keyframes(fadeIn){
+      from {
+            @include transform(scale(0));
+            opacity: 0;
+      }
+      to {
+            @include transform(1);
+            opacity: 1;
+      }
 }

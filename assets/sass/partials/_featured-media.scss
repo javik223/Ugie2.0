@@ -38,6 +38,12 @@
       width: 100%;
       float: left;
       opacity: 0;
+
+      @media #{$small-only}
+      {
+            opacity: 1;
+            background-color: rgba(#fc255d, 0.4);
+      }
       
       //Heading of Featured item that shows the media type of the item.
       //Can be Photo, Video, or others.

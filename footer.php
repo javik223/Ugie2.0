@@ -100,12 +100,20 @@
             <img src="/assets/img/witts&stratts.png" alt="Witts and Stratts" width="70">
         </div>
     </div>
-
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')</script>
-    <script src="/assets/js/TweenMax.min.js"></script>
-    <script src="/assets/js/cycle2.min.js"></script>
-    <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/min/LAB.min.js"></script>
+  <script>
+    $LAB
+    .script("/assets/js/min/jquery.min-ck.js")
+    .script("/assets/js/underscore-min.js")
+    .script("/assets/js/min/TweenMax.min-ck.js").wait()
+    .script("/assets/js/min/cycle2.min-ck.js").wait()
+    .script("/assets/js/min/app-ck.js").wait()
+  </script>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/min/jquery.min-ck.js"><\/script>')</script>
+    <script src="/assets/js/min/TweenMax.min-ck.js"></script>
+    <script src="/assets/js/min/cycle2.min-ck.js"></script>
+    <script src="/assets/js/min/app-ck.js"></script>-->
 
   </body>
 </html>

@@ -53,4 +53,54 @@ $(document).ready(function()
             mobileBoost: true,
             dotData: true
       });*/
+$loadMore = $(".load-more");
+$jsLoadMore = $(".js-load-more");
+$loadMore.on('click', $jsLoadMore, function(){
+      $mediaList = [
+            {
+                  src: "/assets/img/media-page3.jpg", 
+                  title: "Ugie Ewere with the Oba of Benin at the Royal Palace"
+            }, 
+            {
+                  src: "/assets/img/media-page4.jpg", 
+                  title: "Ugie Ewere with the Oba of Benin at the Royal Palace"
+            }, 
+            {
+                  src: "/assets/img/media-page5.jpg", 
+                  title: "Ugie Ewere with the Oba of Benin at the Royal Palace"
+            },
+            {
+                  src:"/assets/img/media-page6.jpg",
+                  title: "New Igue Festival Brochure"
+            },
+            {
+                  src:"/assets/img/media-page7.jpg",
+                  title: "New Igue Festival Brochure"
+            },
+            {
+                  src:"/assets/img/media-page8.jpg",
+                  title: "New Igue Festival Brochure"
+            }
+            ];
+
+      //_.each($mediaList, loadMoreMedia());
+      _.each($mediaList, loadMoreMedia);
+})
+
+function loadMoreMedia($item) {
+
+      var mediaListTemplate = _.template('<div class="media">
+            <div class="item">
+                <img src="<%= src %>" alt="<%= title %>">
+
+                <h3 class="caption"><%= title %></h3>
+            </div>
+        </div>');
+
+console.log(mediaListTemplate($item));
+
+$mainContent = $(".main-content");
+$mainContent.append(mediaListTemplate($item));
+}
+
 });

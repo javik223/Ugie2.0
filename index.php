@@ -2,7 +2,7 @@
     
     <!-- Slider for homepage. This slider contains an image and caption text that changes after a chosen period of time-->
     <div class="slider row collapse js-slider">
-        <div class="slider-wrapper js-slider-wrapper cycle-slideshow" data-cycle-prev=".js-slider-prev" data-cycle-next=".js-slider-next" data-cycle-slides="> div">
+        <div class="slider-wrapper js-slider-wrapper cycle-slideshow" data-cycle-prev=".js-slider-prev" data-cycle-next=".js-slider-next" data-cycle-slides=".js-slider-item">
             <div class="slider-item js-slider-item">
             <div class="slider-item-image">
                 <img src="/assets/img/ugie-carnival-street-performance.jpg" alt="Traditional Groups Dancing at Ugie Carnival">
@@ -162,7 +162,6 @@
 
                         <p>Designers Auranela and CrownLekAfrik have just showcased their designs for charity in the 2013 Destiny's Child Centre Fashion Show, currently holding at the Tinapa Emporium in Calabar.</p>
 
-                        <a href="/news/live-dcc-fashion-sow" class="small button round button-light">read more <span class="icon-arrow-right"></span></a>
                     </div>
                 </div>
 
@@ -176,7 +175,6 @@
 
                         <p>Designers Auranela and CrownLekAfrik have just showcased their designs for charity in the 2013 Destiny's Child Centre Fashion Show, currently holding at the Tinapa Emporium in Calabar.</p>
 
-                        <a href="/news/live-dcc-fashion-sow" class="small button round button-light">read more <span class="icon-arrow-right"></span></a>
                     </div>
                 </div>
 
@@ -190,7 +188,6 @@
 
                         <p>Designers Auranela and CrownLekAfrik have just showcased their designs for charity in the 2013 Destiny's Child Centre Fashion Show, currently holding at the Tinapa Emporium in Calabar.</p>
 
-                        <a href="/news/live-dcc-fashion-sow" class="small button round button-light">read more <span class="icon-arrow-right"></span></a>
                     </div>
                 </div>
 
@@ -204,7 +201,6 @@
 
                         <p>Designers Auranela and CrownLekAfrik have just showcased their designs for charity in the 2013 Destiny's Child Centre Fashion Show, currently holding at the Tinapa Emporium in Calabar.</p>
 
-                        <a href="/news/live-dcc-fashion-sow" class="small button round button-light">read more <span class="icon-arrow-right"></span></a>
                     </div>
                 </div>
             </div>
