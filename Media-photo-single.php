@@ -17,7 +17,7 @@
                 <img src="/assets/img/main-image.jpg" alt="Main Image">
             </div>
 
-            <div class="carousels owl-carousel">
+            <div class="carousel owl-carousel">
                 <a href="/photo2"><img class="lazyOwl" data-src="/assets/img/performances-at-ugie3.jpg" alt=""></a>
 
                 <a href="/photo2"><img class="lazyOwl" data-src="/assets/img/performances-at-ugie3.jpg" alt=""></a>
