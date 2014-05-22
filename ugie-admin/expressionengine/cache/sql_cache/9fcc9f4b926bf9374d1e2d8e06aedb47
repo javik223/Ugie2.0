@@ -7,4 +7,4 @@ SELECT  t.entry_id, t.channel_id, t.forum_topic_id, t.author_id, t.ip_address, t
 				LEFT JOIN exp_channels 		AS w  ON t.channel_id = w.channel_id
 				LEFT JOIN exp_channel_data	AS wd ON t.entry_id = wd.entry_id
 				LEFT JOIN exp_members		AS m  ON m.member_id = t.author_id
-				LEFT JOIN exp_member_data	AS md ON md.member_id = m.member_id WHERE t.entry_id IN (24,23,22,21,20,19,18,17,16,15,14) ORDER BY t.sticky desc, t.entry_date desc, t.entry_id desc
+				LEFT JOIN exp_member_data	AS md ON md.member_id = m.member_id WHERE t.entry_id IN (3,2,1) ORDER BY t.sticky desc, t.entry_date desc, t.entry_id desc

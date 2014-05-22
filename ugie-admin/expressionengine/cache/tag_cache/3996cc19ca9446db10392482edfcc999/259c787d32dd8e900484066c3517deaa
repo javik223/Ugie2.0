@@ -1,0 +1,50 @@
+1400802342
+
+            
+                <div class="featured-item {if "1" == 1 || "1" == 2} medium-6 {if:else} medium-12 {/if} column js-fmi">
+                    {if "1" == 1 || "1" == 2}{exp:img_resize src="http://www.ugie.com/assets/images/performances-at-ugie3.jpg" width="550" height="413" alt="Adams Oshiomole Celebrating The Ugie Canrival"}{if:else}{exp:img_resize src="http://www.ugie.com/assets/images/performances-at-ugie3.jpg" width="800" height="336" alt="Adams Oshiomole Celebrating The Ugie Canrival"}{/if}
+
+                    <div class="featured-item_caption">
+                        
+                            {if "Videos" == "Photos"} <h5>Photos</h5> {/if}
+                            {if "Videos" == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                        
+
+                        <p>
+                            Adams Oshiomole Celebrating The Ugie Canrival
+                        </p>
+                    </div>
+                </div>
+            
+            
+                <div class="featured-item {if "2" == 1 || "2" == 2} medium-6 {if:else} medium-12 {/if} column js-fmi">
+                    {if "2" == 1 || "2" == 2}{exp:img_resize src="http://www.ugie.com/assets/images/performances-at-ugie2.jpg" width="550" height="413" alt="Performances at Ugie Carnival 2"}{if:else}{exp:img_resize src="http://www.ugie.com/assets/images/performances-at-ugie2.jpg" width="800" height="336" alt="Performances at Ugie Carnival 2"}{/if}
+
+                    <div class="featured-item_caption">
+                        
+                            {if "Photos" == "Photos"} <h5>Photos</h5> {/if}
+                            {if "Photos" == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                        
+
+                        <p>
+                            Performances at Ugie Carnival 2
+                        </p>
+                    </div>
+                </div>
+            
+            
+                <div class="featured-item {if "3" == 1 || "3" == 2} medium-6 {if:else} medium-12 {/if} column js-fmi">
+                    {if "3" == 1 || "3" == 2}{exp:img_resize src="http://www.ugie.com/assets/images/performances-at-ugie.jpg" width="550" height="413" alt="Ugie Ewere (Bringing the ewere leaves to the palace). Ugie Carnival"}{if:else}{exp:img_resize src="http://www.ugie.com/assets/images/performances-at-ugie.jpg" width="800" height="336" alt="Ugie Ewere (Bringing the ewere leaves to the palace). Ugie Carnival"}{/if}
+
+                    <div class="featured-item_caption">
+                        
+                            {if "Photos" == "Photos"} <h5>Photos</h5> {/if}
+                            {if "Photos" == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                        
+
+                        <p>
+                            Ugie Ewere (Bringing the ewere leaves to the palace). Ugie Carnival
+                        </p>
+                    </div>
+                </div>
+            

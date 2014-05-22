@@ -2,6 +2,8 @@
             @include grid-row();
             //background-color: $white;
             padding-top: rem-calc(30);
+            padding-left: em(20);
+            padding-right: em(20);
 
             &.full-width {
                   max-width: 100% !important;
@@ -14,6 +16,11 @@
                   }
             }
             margin-bottom: rem-calc(70);
+
+            @media #{$large-up} {
+                padding-left: 0;
+                padding-right: 0;
+            }
 }
 .main-area {
       @media #{$medium-up} {
@@ -34,6 +41,11 @@
 
       @media #{$large-up} {
         padding-right: rem-calc(40);
+      }
+
+      h3,h4,h5,h6 {
+        font-weight: 400;
+        color: $secondary-color;
       }
 }
 .sidebar {
@@ -71,6 +83,32 @@
 
             &:last-child {
                 border-bottom: none;
+            }
+
+            > ul {
+                display: none;
+                padding-left: rem-calc(30);
+                font-size: rem-calc(14);
+                
+                
+
+                a {
+                    color: lighten($gray, 10%);
+                    font-weight: 500;
+                }
+            }
+            &.active {
+                a {
+                    color: $secondary-color;
+                }
+
+                ul {
+                    display: block;
+
+                    a {
+                        color: $gray;
+                    }
+                }
             }
         }
 

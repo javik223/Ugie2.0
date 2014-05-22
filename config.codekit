@@ -26,256 +26,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
-	"\/ai-cache\/1200\/assets\/img\/ugie-carnival-street-performance.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 146672,
-		"inputAbbreviatedPath": "\/ai-cache\/1200\/assets\/img\/ugie-carnival-street-performance.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/1200\/assets\/img\/ugie-carnival-street-performance.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/1200\/assets\/img\/ugie-carnival-street-performance2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 116210,
-		"inputAbbreviatedPath": "\/ai-cache\/1200\/assets\/img\/ugie-carnival-street-performance2.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/1200\/assets\/img\/ugie-carnival-street-performance2.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/2400\/assets\/img\/background.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 180947,
-		"inputAbbreviatedPath": "\/ai-cache\/2400\/assets\/img\/background.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/2400\/assets\/img\/background.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/assets\/img\/edo-state-tourism.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3749,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/assets\/img\/edo-state-tourism.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/assets\/img\/edo-state-tourism.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/assets\/img\/the-benin-ugie-carnival-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 70819,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/assets\/img\/the-benin-ugie-carnival-logo.png",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/assets\/img\/the-benin-ugie-carnival-logo.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/assets\/img\/the-benin-ugie-teaser.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5049,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/assets\/img\/the-benin-ugie-teaser.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/assets\/img\/the-benin-ugie-teaser.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/assets\/img\/the-hexagon-network.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4631,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/assets\/img\/the-hexagon-network.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/assets\/img\/the-hexagon-network.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/Award-Ceremony_1000x600.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14306,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Award-Ceremony_1000x600.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Award-Ceremony_1000x600.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/Award-Ceremony_500x330.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14831,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Award-Ceremony_500x330.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Award-Ceremony_500x330.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/Award-Ceremony_550x400.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 15985,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Award-Ceremony_550x400.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Award-Ceremony_550x400.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/Beauty-Pageant_1000x600.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10282,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Beauty-Pageant_1000x600.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Beauty-Pageant_1000x600.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/Beauty-Pageant_500x330.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10609,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Beauty-Pageant_500x330.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Beauty-Pageant_500x330.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/Beauty-Pageant_550x400.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11295,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Beauty-Pageant_550x400.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Beauty-Pageant_550x400.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/cultural-dance-groups-ugie-carnival_1200x653.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 15165,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/cultural-dance-groups-ugie-carnival_1200x653.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/cultural-dance-groups-ugie-carnival_1200x653.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/Ewere-day_1000x600.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11669,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Ewere-day_1000x600.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Ewere-day_1000x600.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/Ewere-day_500x330.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11761,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Ewere-day_500x330.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Ewere-day_500x330.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/Ewere-day_550x400.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12726,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Ewere-day_550x400.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/Ewere-day_550x400.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie2_500x330.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 17245,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie2_500x330.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie2_500x330.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie2_550x413.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18760,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie2_550x413.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie2_550x413.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie3_500x330.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 13029,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie3_500x330.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie3_500x330.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie3_550x413.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14201,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie3_550x413.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie3_550x413.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie4_500x330.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 13861,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie4_500x330.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie4_500x330.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie4_650x733.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20475,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie4_650x733.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie4_650x733.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie_800x336.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12647,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie_800x336.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/performances-at-ugie_800x336.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/ai-cache\/320\/images\/resized\/assets\/images\/ugie-carnival-street-performance_1200x653.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 13643,
-		"inputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/ugie-carnival-street-performance_1200x653.jpg",
-		"outputAbbreviatedPath": "\/ai-cache\/320\/images\/resized\/assets\/images\/ugie-carnival-street-performance_1200x653.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/ai-cookie.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -802,6 +552,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/_thumbs\/Ikpema-drama-presentation-ugie.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2895,
+		"inputAbbreviatedPath": "\/assets\/images\/_thumbs\/Ikpema-drama-presentation-ugie.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_thumbs\/Ikpema-drama-presentation-ugie.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/_thumbs\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -827,6 +587,16 @@
 		"initialSize": 3982,
 		"inputAbbreviatedPath": "\/assets\/images\/_thumbs\/news-blog-image3.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/_thumbs\/news-blog-image3.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_thumbs\/Oba-Erediauwa-Award-for-Excellence.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3497,
+		"inputAbbreviatedPath": "\/assets\/images\/_thumbs\/Oba-Erediauwa-Award-for-Excellence.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_thumbs\/Oba-Erediauwa-Award-for-Excellence.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -890,6 +660,36 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/_thumbs\/Ugie-Carnival---Art-exhibition.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3503,
+		"inputAbbreviatedPath": "\/assets\/images\/_thumbs\/Ugie-Carnival---Art-exhibition.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_thumbs\/Ugie-Carnival---Art-exhibition.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_thumbs\/Ugie-carnival-queen-2013-competition.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2933,
+		"inputAbbreviatedPath": "\/assets\/images\/_thumbs\/Ugie-carnival-queen-2013-competition.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_thumbs\/Ugie-carnival-queen-2013-competition.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_thumbs\/Ugie-carnival-street-party-2013.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3283,
+		"inputAbbreviatedPath": "\/assets\/images\/_thumbs\/Ugie-carnival-street-party-2013.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_thumbs\/Ugie-carnival-street-party-2013.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/_thumbs\/ugie-carnival-street-performance.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -897,6 +697,36 @@
 		"initialSize": 3160,
 		"inputAbbreviatedPath": "\/assets\/images\/_thumbs\/ugie-carnival-street-performance.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/_thumbs\/ugie-carnival-street-performance.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_thumbs\/ugie-contact-image.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3877,
+		"inputAbbreviatedPath": "\/assets\/images\/_thumbs\/ugie-contact-image.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_thumbs\/ugie-contact-image.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_thumbs\/ugie-ewere-chiefs-bringing-ewere-leaves-to-the-palace.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2688,
+		"inputAbbreviatedPath": "\/assets\/images\/_thumbs\/ugie-ewere-chiefs-bringing-ewere-leaves-to-the-palace.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_thumbs\/ugie-ewere-chiefs-bringing-ewere-leaves-to-the-palace.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_thumbs\/Ugie-Iron.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2987,
+		"inputAbbreviatedPath": "\/assets\/images\/_thumbs\/Ugie-Iron.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_thumbs\/Ugie-Iron.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -1380,6 +1210,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/Ikpema-drama-presentation-ugie.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 123256,
+		"inputAbbreviatedPath": "\/assets\/images\/Ikpema-drama-presentation-ugie.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/Ikpema-drama-presentation-ugie.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/news-blog-image.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1397,6 +1237,16 @@
 		"initialSize": 171884,
 		"inputAbbreviatedPath": "\/assets\/images\/news-blog-image3.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/news-blog-image3.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Oba-Erediauwa-Award-for-Excellence.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 157088,
+		"inputAbbreviatedPath": "\/assets\/images\/Oba-Erediauwa-Award-for-Excellence.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/Oba-Erediauwa-Award-for-Excellence.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -1460,6 +1310,36 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/Ugie-Carnival---Art-exhibition.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 246705,
+		"inputAbbreviatedPath": "\/assets\/images\/Ugie-Carnival---Art-exhibition.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/Ugie-Carnival---Art-exhibition.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Ugie-carnival-queen-2013-competition.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 148206,
+		"inputAbbreviatedPath": "\/assets\/images\/Ugie-carnival-queen-2013-competition.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/Ugie-carnival-queen-2013-competition.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Ugie-carnival-street-party-2013.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 179119,
+		"inputAbbreviatedPath": "\/assets\/images\/Ugie-carnival-street-party-2013.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/Ugie-carnival-street-party-2013.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/ugie-carnival-street-performance.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1467,6 +1347,36 @@
 		"initialSize": 977057,
 		"inputAbbreviatedPath": "\/assets\/images\/ugie-carnival-street-performance.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/ugie-carnival-street-performance.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/ugie-contact-image.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 228549,
+		"inputAbbreviatedPath": "\/assets\/images\/ugie-contact-image.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/ugie-contact-image.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/ugie-ewere-chiefs-bringing-ewere-leaves-to-the-palace.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 154887,
+		"inputAbbreviatedPath": "\/assets\/images\/ugie-ewere-chiefs-bringing-ewere-leaves-to-the-palace.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/ugie-ewere-chiefs-bringing-ewere-leaves-to-the-palace.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Ugie-Iron.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 112250,
+		"inputAbbreviatedPath": "\/assets\/images\/Ugie-Iron.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/Ugie-Iron.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -24481,6 +24391,14 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/ugie-admin\/expressionengine\/third_party\/eehive_hacksaw\/pi.eehive_hacksaw.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/eehive_hacksaw\/pi.eehive_hacksaw.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/ugie-admin\/expressionengine\/third_party\/expresso\/config.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -24723,11 +24641,11 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
-	"\/ugie-admin\/expressionengine\/third_party\/nsm_better_meta\/libraries\/Nsm_better_meta_helper.php": {
+	"\/ugie-admin\/expressionengine\/third_party\/nsm_better_meta\/libraries\/nsm_better_meta_helper.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/nsm_better_meta\/libraries\/Nsm_better_meta_helper.php",
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/nsm_better_meta\/libraries\/nsm_better_meta_helper.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -24808,6 +24726,86 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/nsm_morphine_theme\/language\/english\/lang.nsm_morphine_theme.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/ugie-admin\/expressionengine\/third_party\/twitter\/classes\/OAuth.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/twitter\/classes\/OAuth.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/ugie-admin\/expressionengine\/third_party\/twitter\/classes\/twitteroauth.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/twitter\/classes\/twitteroauth.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/ugie-admin\/expressionengine\/third_party\/twitter\/css\/twitter.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/twitter\/css\/twitter.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/ugie-admin\/expressionengine\/third_party\/twitter\/language\/english\/lang.twitter.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/twitter\/language\/english\/lang.twitter.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/ugie-admin\/expressionengine\/third_party\/twitter\/mcp.twitter.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/twitter\/mcp.twitter.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/ugie-admin\/expressionengine\/third_party\/twitter\/mod.twitter.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/twitter\/mod.twitter.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/ugie-admin\/expressionengine\/third_party\/twitter\/models\/twitter_model.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/twitter\/models\/twitter_model.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/ugie-admin\/expressionengine\/third_party\/twitter\/upd.twitter.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/twitter\/upd.twitter.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/ugie-admin\/expressionengine\/third_party\/twitter\/views\/authenticate.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/twitter\/views\/authenticate.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/ugie-admin\/expressionengine\/third_party\/twitter\/views\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ugie-admin\/expressionengine\/third_party\/twitter\/views\/index.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},

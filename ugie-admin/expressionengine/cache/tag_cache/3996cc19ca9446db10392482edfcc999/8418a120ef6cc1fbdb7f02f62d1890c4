@@ -1,0 +1,19 @@
+1400802342
+
+            
+
+            <div class="featured-item medium-5 column js-fmi">
+                {exp:img_resize src="http://www.ugie.com/assets/images/performances-at-ugie4.jpg" width="650" height="733" alt="Ugie Ewere ceremony at the palace"}
+
+                <div class="featured-item_caption">
+                    
+                        {if "Photos" == "Photos"} <h5>Photos</h5> {/if}
+                        {if "Photos" == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                    
+
+                    <p>
+                        Ugie Ewere ceremony at the palace
+                    </p>
+                </div>
+            </div>
+        

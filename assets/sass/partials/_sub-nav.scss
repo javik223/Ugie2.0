@@ -43,6 +43,12 @@
             @media #{$medium-only} {
                   display: none;
             }
+
+            a {
+                  color: $white;
+                  font-weight: 400;
+                  font-size: rem-calc(17);
+            }
       }
       //Event Slogan "A festivity of peace & joy"
       .slogan {

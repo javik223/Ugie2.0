@@ -1,11 +1,34 @@
  <ul>
-                <li><a href="/info/history">Info</a></li>
-                <li><a href="/info/history">History</a></li>
-                <li><a href="/info/participate">Benin Culture Art &amp; History</a></li>
-                <li><a href="/info/the-festivals">The Logo &amp; Mask</a></li>
-                <li><a href="/info/the-festivals">The Festivals</a></li>
-                <li><a href="/info/events">Events</a></li>
-                <li><a href="/info/participate">Participate</a></li>
-                <li><a href="/info/participate">Partners</a></li>
-                <li><a href="/info/contact">Contact</a></li>
+                <li  {if segment_1 == "info" && segment_2 == ""}class="active"{/if}><a href="/info">Info</a></li>
+                <li  {if segment_2 == "history"}class="active"{/if}><a href="/info/history">History</a></li>
+                <li  {if segment_1 == "benin-culture-art-history"}class="active"{/if}><a href="/info/benin-culture-art-history">Benin Culture Art &amp; History</a></li>
+                <li {if segment_2 == "/info/the-logo-mask"}class="active"{/if}><a href="/info/the-logo-mask">The Logo &amp; Mask</a></li>
+                <li {if segment_2 == "festivals"}class="active"{/if}><a href="/info/the-festivals">The Festivals</a>
+                    <ul>
+                        <li><a href="/info/festivals/igue-festival">Igue Festival</a></li>
+                        <li><a href="/info/festivals/iguerhoba">Iguerhoba</a></li>
+                        <li><a href="/info/festivals/ugie-iron">Ugie Iron</a></li>
+                        <li><a href="/info/festivals/igue-oba">Igue Oba</a></li>
+                        <li><a href="/info/festivals/ugie-emobo">Ugie Emobo</a></li>
+                        <li><a href="/info/festivals/ugie-Ivbioba">Ugie Ivbioba</a></li>
+                        <li><a href="/info/festivals/ugie-edohia">Ugie Edohia</a></li>
+                        <li><a href="/info/ugie-ewere/ugie-ewere">Ugie Ewere</a></li>
+                    </ul>
+                </li>
+                <li {if segment_2 == "events"}class="active"{/if}><a href="/info/events">Events</a>
+
+                 <ul>
+                        <li><a href="/info/events/carnival">Carnival</a></li>
+                         <li><a href="/info/events/ugie-carnival-queen">Beauty Pageant</a></li>
+                        <li><a href="/info/events/art-exhibitions">Art Exhibitions</a></li>
+                        <li><a href="/info/events/theatre-drama-shows">Theatre &amp; Drama Shows</a></li>
+                        <li><a href="/info/events/oba-erediauwa-award-for-excellence">Oba Erediauwa Award for Excellence</a></li>
+                        <li><a href="/info/events/traditional-games">Traditional Games</a></li>
+                        <li><a href="/info/events/wrestling-compeition">Wrestling Competition</a></li>
+                        <li><a href="/info/events/live-concert">Live Concerts</a></li>
+                    </ul>
+                </li>
+                <li {if segment_2 == "participate"}class="active"{/if}><a href="/info/participate">Participate</a></li>
+                <li {if segment_2 == "partners"}class="active"{/if}><a href="/info/partners">Partners</a></li>
+                <li {if segment_2 == "contact"}class="active"{/if}><a href="/info/contact">Contact</a></li>
             </ul>

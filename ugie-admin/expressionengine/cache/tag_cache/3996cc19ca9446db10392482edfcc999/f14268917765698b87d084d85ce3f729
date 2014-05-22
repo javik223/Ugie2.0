@@ -1,0 +1,53 @@
+1400802342
+
+            
+
+            <div class="featured-item medium-4 column js-fmi">
+                {exp:img_resize src="http://www.ugie.com/assets/images/Award-Ceremony.jpg" width="550" height="400" alt="Award Ceremony"}
+
+                <div class="featured-item_caption">
+                    
+                        {if "Photos" == "Photos"} <h5>Photos</h5> {/if}
+                        {if "Photos" == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                    
+
+                    <p>
+                        Award Ceremony
+                    </p>
+                </div>
+            </div>
+        
+            
+
+            <div class="featured-item medium-4 column js-fmi">
+                {exp:img_resize src="http://www.ugie.com/assets/images/Beauty-Pageant.jpg" width="550" height="400" alt="Beauty Pageant 2013"}
+
+                <div class="featured-item_caption">
+                    
+                        {if "Photos" == "Photos"} <h5>Photos</h5> {/if}
+                        {if "Photos" == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                    
+
+                    <p>
+                        Beauty Pageant 2013
+                    </p>
+                </div>
+            </div>
+        
+            
+
+            <div class="featured-item medium-4 column js-fmi">
+                {exp:img_resize src="http://www.ugie.com/assets/images/Ewere-day.jpg" width="550" height="400" alt="Ewere Day Celebrations at the Oba&#8217;s Palace"}
+
+                <div class="featured-item_caption">
+                    
+                        {if "Photos" == "Photos"} <h5>Photos</h5> {/if}
+                        {if "Photos" == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                    
+
+                    <p>
+                        Ewere Day Celebrations at the Oba&#8217;s Palace
+                    </p>
+                </div>
+            </div>
+        
