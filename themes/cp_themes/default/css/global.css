@@ -919,7 +919,7 @@ a#revealSidebarLink:link, a#revealSidebarLink:visited  {
 
 /* Main Content */
 #mainWrapper {
-	background-color: 	#fff;
+	background: url("//static.contentful.com/app/bg-8f1e94192be8a3ced04388812462a8ec.jpg");
 }
 
 #mainContent {

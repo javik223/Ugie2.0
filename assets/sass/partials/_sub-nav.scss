@@ -39,6 +39,10 @@
                   font-size: rem-calc(60);
                   color: $white;
             }
+
+            @media #{$medium-only} {
+                  display: none;
+            }
       }
       //Event Slogan "A festivity of peace & joy"
       .slogan {
@@ -47,7 +51,7 @@
             color: $white;
             margin-right: em(20);
             font-weight: $font-weight-bold;
-            @include text-shadow(rgba($primary-color, 0.9) 0px 0px 100px 100px, rgba($primary-color, 0.9) 0px 0px 100px 100px, rgba($primary-color, 0.9) 0 0 100px 100px 0);
+            //@include text-shadow(rgba($primary-color, 0.9) 0px 0px 100px 100px, rgba($primary-color, 0.9) 0px 0px 100px 100px, rgba($primary-color, 0.9) 0 0 100px 100px 0);
 
 
             @include grid-column(
@@ -73,6 +77,15 @@
 
             .button {
                    font-size: rem-calc(20);
+            }
+
+            @media #{$medium-only} {
+               @include grid-column(
+                  $columns: 5,
+                  $collapse: true,
+                  $float: right,
+                  $last-column: true
+            );   
             }
       }
 }

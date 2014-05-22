@@ -14,9 +14,10 @@
 
       .item {
             position: relative;
-            background-color: rgba($primary-color, 0.6);
+            //background-color: rgba($primary-color, 0.6);
             overflow: hidden;
             @include animation(fadeIn 1.0s, ease-in);
+            border: 5px solid $white;
 
             @media #{$medium-only} {
                   @include grid-column(
@@ -26,14 +27,14 @@
             }
             @media #{$large-up} {
                   @include grid-column(
-                        $columns: 3,
+                        $columns: 4,
                         $collapse: true
-                  )
+                  );
             }
 
             img {
                   width: 100%;
-                  opacity: 0.8;
+                  //opacity: 0.8;
                   @include transform(scale(1.2));
                   @include transition ( all 3s ease-out );
 
@@ -41,6 +42,26 @@
                        @include transform(scale(1));
                        opacity: 0.5;
                   }
+            }
+
+            &:after {
+              content: '';
+              width: 100%;
+              height: 50%;
+              position: absolute;
+              bottom: 0;
+              background: image-url("linear-gradient.png") repeat-x;
+              z-index: 10;
+            }
+
+            h4 {
+              z-index: 100;
+              font-size: rem-calc(22);
+              font-weight: 400;
+
+              @media #{$medium-only} {
+                font-size: rem-calc(18);
+              }
             }
 
       }
@@ -60,15 +81,28 @@
 }
 .media_featured-slider{
       margin-bottom: em(40);
+      margin-top: em(40);
       position: relative;
+      min-height: rem-calc(400);
+      overflow: hidden;
 
       .media_featured-slider_image {
             padding-left: 0 !important;
             padding-right: 0 !important;
+            margin-bottom: rem-calc(30);
+
+            @media #{$small-only} {
+              width: 180%;
+              @include transform(translateX(-20%));
+            }
       }
 
       .media_featured-slider_info {
             padding: 0 em(20);
+
+            @media #{$small-only} {
+              padding-bottom: 0;
+            }
       }
 
       .media_featured-slider_controls {
@@ -76,6 +110,7 @@
             padding-top: rem-calc(10);
             text-align: center;
             z-index: 1000;
+            margin-bottom: rem-calc(20);
 
             span {
                  @include inline-block;
@@ -85,7 +120,7 @@
             @media #{$medium-up} {
                   position: absolute;
                   right: 0;
-                  bottom: 0;
+                  bottom: rem-calc(30);
                   text-align: left;
 
                   @include grid-column(

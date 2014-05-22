@@ -1,0 +1,50 @@
+{embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+       <div class="main-content full-width">
+        <div class="row">
+              <h1 class="page-header">Media <a href="/media/photos">Photos</a> <a href="/media/videos">Videos</a></h1>
+
+               <div class="media_featured-slider row collapse cycle-slideshow" data-cycle-prev=".js-slider-prev" data-cycle-next=".js-slider-next" data-cycle-slides=".js-slider-item">
+                  
+                  {exp:channel:entries channel="media" limit="3" disable="member_data|pagination"}
+                  <div class="media_featured-slider-item js-slider-item">
+                      <div class="media_featured-slider_image medium-8 column">
+                      {exp:img_resize src="{cover_image}" width="1000" height="600" alt="{title}"}
+                      </div>
+                  
+                      <div class="media_featured-slider_info medium-4 column">
+                         <h5>Featured Media</h5>
+                          <h3>{title}</h3>
+
+                              <p>
+                                  {synopsis}
+                              </p>
+                      </div>
+                  </div>
+                  {/exp:channel:entries}
+
+                  <div class="media_featured-slider_controls">
+                      <span class="icon-arrow-left js-slider-prev"></span>
+
+                       <span class="icon-arrow-right js-slider-next"></span>
+                  </div>
+              </div>
+
+              {exp:channel:entries channel="media" limit="6" cache="yes" refresh="60" disable="member_data"}
+              <div class="media">
+                  <div class="item">
+                      <a href="{title_permalink=/media}" title="{title}">
+                  
+                        {categories}
+                                  {if category_name == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              {/categories}
+                  
+                      {exp:img_resize src="{cover_image}" width="500" height="330" alt="{title}"}
+
+                      <h4 class="caption">{title}</h4>
+                      </a>
+                  </div>
+              </div>
+              {/exp:channel:entries}
+        </div>
+        </div>
+{embed="Main/.footer"}

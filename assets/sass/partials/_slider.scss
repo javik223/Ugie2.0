@@ -2,6 +2,9 @@
 .slider {
       @include transform( translateZ(0) );
       position: relative;
+      overflow: hidden;
+      min-height: rem-calc(400);
+      overflow: hidden;
 
       .slider-controls {
             font-size: rem-calc(40);
@@ -34,7 +37,6 @@
 
       .slider-item-image {
             float: left;
-
 
             @media #{$large-up} {
                   @include grid-column(

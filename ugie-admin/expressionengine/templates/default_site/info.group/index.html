@@ -1,0 +1,28 @@
+{embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+
+<div class="main-content full-width info">
+    <div class="row">
+        <!--Sub navigation content goes here-->
+        <div class="sub-side-nav">
+            {embed="info/.side-nav"}
+        </div>
+        <!--End of Sub Navigation Content -->
+
+        <!--Main Content Goes here-->
+        <!--End of Main Content-->
+        <div class="main-area">
+        {exp:channel:entries channel="info" disable="member_data|pagination"}
+            {body}
+        {/exp:channel:entries}
+        </div>
+
+        <!--Sidebar goes here-->
+        <div class="sidebar">
+            {embed="info/.sidebar"}
+        </div>
+        <!--Sidebar ends here-->
+        </div>
+    </div>
+</div>    
+
+{embed="Main/.footer"}

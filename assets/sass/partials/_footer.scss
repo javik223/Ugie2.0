@@ -18,6 +18,16 @@
       }
 
       img {
+            height: 35px;
+            margin-bottom: rem-calc(20);
+
+            @media #{$medium-only} {
+                  height: 45px;
+            }
+
+            @media #{$large-up} {
+                   height: 58px;
+            }
       }
       @media #{$large-up} {
             padding-right: 0;

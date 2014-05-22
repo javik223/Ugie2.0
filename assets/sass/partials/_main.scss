@@ -1,10 +1,11 @@
 .main-content {
             @include grid-row();
             //background-color: $white;
+            padding-top: rem-calc(30);
 
             &.full-width {
                   max-width: 100% !important;
-                  background-color: rgba($white, 0.96);
+                  background-color: rgba($white, 0.99);
             }
 
             &.small-pad {
@@ -12,4 +13,92 @@
                        padding: 0 em(10);
                   }
             }
+            margin-bottom: rem-calc(70);
+}
+.main-area {
+      @media #{$medium-up} {
+            @include grid-column(
+                $columns: 7.5
+            );
+      }
+
+      @media #{$medium-only} {
+        @include grid-column(
+                $columns: 9
+            );
+      }
+
+      img {
+            padding: rem-calc(10) 0 rem-calc(20);
+      }
+
+      @media #{$large-up} {
+        padding-right: rem-calc(40);
+      }
+}
+.sidebar {
+      @media #{$medium-only} {
+             @include grid-column(
+                  $columns: 12,
+                  $collapse: true
+            );
+     }
+     @media #{$large-up} {
+             @include grid-column(
+                  $columns: 2.5,
+                  $collapse: true
+            );
+     }
+}
+.sub-side-nav {
+  @media #{$medium-up} {
+            @include grid-column(
+            $columns: 2,
+            $collapse: true
+        );
+        padding-right: rem-calc(30);
+     }
+
+     ul {
+        margin-left: 0;
+        font-weight: bold;
+        letter-spacing: .03em;
+
+        li {
+            padding-bottom: rem-calc(3);
+            margin-bottom: rem-calc(3);
+            border-bottom: 1px solid lighten($gray, 32%);
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        a {
+            color: $gray;
+
+            .active {
+
+            }
+        } 
+     }
+}
+.main-area, .sub-side-nav, .sidebar {
+    padding-top: rem-calc(40);
+}
+.side-image {
+    background-color: lighten($gray, 30%);
+    padding: em(10) em(20);
+    float: left;
+
+    img {
+        width: 100%;
+        display: block;
+        float: left;
+    }
+
+    p {
+        font-size: em(12);
+        font-style: italic;
+    }
 }

@@ -12,9 +12,13 @@
             $center: true
       );
 
-      @media #{$medium-only} {
+      @media #{$medium-up} {
             p { 
-                  font-size: em(13);
+                  font-size: em(15);
+            }
+
+            .sidebar & {
+                 @include grid-column($columns: 12);
             }
       }
 }
@@ -37,6 +41,10 @@
 
       @media #{$small-only} {
             padding: em(20) em(40);
+      }
+
+      .sidebar & {
+            width: 30%;
       }
 }
 .connect-social {
@@ -68,5 +76,11 @@
       }
       .icon-twitter, h4 {
             color: $white;
+      }
+}
+
+.update-twitter, .connect-instagram, .connect-social, .update  {
+      .sidebar & {
+            padding: rem-calc(20);
       }
 }

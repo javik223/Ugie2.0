@@ -1,0 +1,196 @@
+{embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+    
+    <!-- Slider for homepage. This slider contains an image and caption text that changes after a chosen period of time-->
+    <div class="slider row collapse js-slider">
+        <div class="slider-wrapper js-slider-wrapper cycle-slideshow" data-cycle-prev=".js-slider-prev" data-cycle-next=".js-slider-next" data-cycle-slides=".js-slider-item">
+            {exp:channel:entries channel="home_slider" limit="3"}
+                <div class="slider-item js-slider-item">
+                    <div class="slider-item-image">
+                        {exp:img_resize src="{home_slider_image}" width="1200" height="653" alt="{title}"}
+                    </div>
+
+                    <h2 class="slider-item-caption">
+                        {title}
+                    </h2>
+                </div>
+            {/exp:channel:entries}
+        </div>
+
+        <div class="slider-controls">
+             <span class="icon-arrow-left js-slider-prev"></span>
+
+             <span class="icon-arrow-right js-slider-next"></span>
+        </div>
+    </div>
+    <!--End of Slider -->
+
+
+    <!--Media Navigation begins-->
+        <div class="media-nav row collapse">
+        <ul class="media-nav_links">
+            <li><a href="/media" class="isActive">Media</a></li>
+            <li><a href="/media/photos">Photos</a></li>
+            <li><a href="/media/videos">Videos</a></li>
+            <li><a href="/events">Lineup</a></li>
+        </ul>
+
+        <div class="media-nav_view-media">
+             <button class="small button button-secondary round">
+               View all media <span class="arrow-right"></span>
+            </button>
+        </div>
+    </div>
+    <!--Media Navigation ends-->
+
+    <!--Featured Media Items Begins-->
+
+    <div class="row featured collapse">
+        {exp:channel:entries channel="media" limit="3" cache="yes" refresh="60" disable="member_data|pagination"}
+            
+
+            <div class="featured-item medium-4 column js-fmi">
+                {exp:img_resize src="{cover_image}" width="550" height="400" alt="{title}"}
+
+                <div class="featured-item_caption">
+                    {categories}
+                        {if category_name == "Photos"} <h5>Photos</h5> {/if}
+                        {if category_name == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                    {/categories}
+
+                    <p>
+                        {title}
+                    </p>
+                </div>
+            </div>
+        {/exp:channel:entries}
+    </div>
+
+    <div class="row collapse featured">
+
+        {exp:channel:entries channel="media" limit="1" cache="yes" refresh="60" disable="member_data|pagination" offset="3"}
+            
+
+            <div class="featured-item medium-5 column js-fmi">
+                {exp:img_resize src="{cover_image}" width="650" height="733" alt="{title}"}
+
+                <div class="featured-item_caption">
+                    {categories}
+                        {if category_name == "Photos"} <h5>Photos</h5> {/if}
+                        {if category_name == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                    {/categories}
+
+                    <p>
+                        {title}
+                    </p>
+                </div>
+            </div>
+        {/exp:channel:entries}
+
+
+       <div class="medium-7 columns">
+            <div class="row collapse">
+            
+            {exp:channel:entries channel="media" limit="3" cache="yes" refresh="60" disable="member_data|pagination" offset="4"}
+            
+                <div class="featured-item {if count == 1 || count == 2 } medium-6 {if:else} medium-12 {/if} column js-fmi">
+                    {if count == 1 || count == 2}{exp:img_resize src="{cover_image}" width="550" height="413" alt="{title}"}{if:else}{exp:img_resize src="{cover_image}" width="800" height="336" alt="{title}"}{/if}
+
+                    <div class="featured-item_caption">
+                        {categories}
+                            {if category_name == "Photos"} <h5>Photos</h5> {/if}
+                            {if category_name == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                        {/categories}
+
+                        <p>
+                            {title}
+                        </p>
+                    </div>
+                </div>
+            {/exp:channel:entries}
+        </div>
+       </div>
+    </div>
+    <!--Featured Media Items Ends-->
+
+    <!--Featured Sections -->
+
+    <div class="row collapse">
+        <h2 class="emt">Press, News &amp; Blog</h2>
+
+        <div class="row main-content">
+            <div class="featured-news small-12 medium-8 large-6 columns">
+                {exp:channel:entries channel="news" limit="4"}
+                   <a href="{title_permalink='/news'}" title="{title}"><div class="featured-news_item">
+                        <div class="featured-news_item_image">
+                                {exp:img_resize src="{news_cover_image}" max_width="174" alt="{title}"}
+                        </div>
+                    </a>
+
+                        <div class="featured-news_item_content">
+                            <a href="{title_permalink='/news'}" title="{title}"><h3 class="featured-news_item_heading">{title}</h3></a>
+
+                            <p>
+                                {news_body}
+                            </p>
+                        </div>
+                    </div>
+                {/exp:channel:entries}
+            </div>
+
+          <!--Social media updates and newsletter signup -->
+        <div class="updates medium-4 large-3 columns">
+            <div class="update update-twitter">
+                <h4>From Twitter <a href="http://twitter.com/thebeninugiecarnival"><span class="icon-twitter"></span></a></h4>
+
+                <p>In case you're after an amusing start to your Saturday evening, here's some Milton Jones highlights <a href="#gb37http://t.co/rMTjdz1U0A">#gb37 http://t.co/rMTjdz1U0A</a></p>
+            </div>
+
+            <div class="update update-newsletter">
+                <h4>Get Updates</h4>
+
+                <p>Signup to receive the latest Ugie Carnival News, along with special updates and information.</p>
+
+                <form action="">
+                    <input type="email" name="email" placeholder="Enter your email">
+
+                    <input type="submit" value="SIGN UP" class="small button round">
+                </form>
+            </div>
+        </div>
+        <!--End of Social media udpates and newsletter signup-->
+
+        <div class="connects medium-4 large-3 columns">
+            <div class="connect connect-instagram">
+                <img src="/assets/img/instagram-logo-with-text.svg" alt="The Ugie Carnival on Instagram">
+
+                <p>
+                    Follow The Benin Ugie Carnival on Instagram, experience historical moments and share those experiences with friends
+                </p>
+            </div>
+
+            <div class="connect connect-social">
+                <h5>@TheBeninUgieCarnival</h5>
+
+                <span class="icon-twitter icon-medium"></span>
+
+                <span class="icon-instagram icon-medium"></span>
+
+                <span class="icon-facebook icon-medium"></span>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <!--Featured Sctions End-->
+
+
+    <!--featured ad begins here -->
+    <div class="featured-ad row" role="banner">
+        <a href="/info/history" data-title="The Benin Ugie - The Origins" title="The Benin Ugie - The Origins">
+            <img src="/assets/img/the-benin-ugie-teaser.jpg" alt="The Benin Ugie - The Origins">
+        </a>
+    </div>
+    
+
+{embed="Main/.footer"}
