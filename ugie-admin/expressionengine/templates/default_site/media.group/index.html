@@ -1,5 +1,24 @@
 {if segment_1 == "media" AND (segment_2 == "" OR (segment_2 >= "P0" AND segment_2 <= "P99999999"))}
-    {embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+   {preload_replace:this_page_channel="media"}
+
+{exp:channel:entries
+    _cache="yes"
+    disable="category_fields|pagination|member_data"
+    limit="1"
+    refresh="60"
+    status="not closed"
+    track_views="one"
+    channel="{this_page_channel}"
+}
+
+   {embed="Main/.header"
+            title = "Media"
+            title_suffix=""
+            canonical_url="{site_url}media"
+            keywords = "Media, photos, videos, ugie, ewere, pageant, beauty, ugie queen"
+            description = "Photos and Videos from The Benin Ugie Carnival Celebrations"
+    }
+{/exp:channel:entries}
        <div class="main-content full-width">
         <div class="row">
               <h1 class="page-header bigger extra-pad">Media <a href="/media/photos">Photos</a> <a href="/media/videos">Videos</a></h1>
@@ -62,9 +81,28 @@
 {embed="Main/.footer"}
 
 {if:elseif segment_2 == "photos"}
-    <!--Photos Landing Page-->
+    {!--Photos Landing Page--}
     {if segment_3 ==""}
-          {embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+          {preload_replace:this_page_channel="media"}
+
+          {exp:channel:entries
+              _cache="yes"
+              disable="category_fields|pagination|member_data"
+              limit="1"
+              refresh="60"
+              status="not closed"
+              track_views="one"
+              channel="{this_page_channel}"
+          }
+
+             {embed="Main/.header"
+                      entry_id="{entry_id}"
+                      title="Photos"
+                      canonical_url="{site_url}media/photos"
+                      keywords = "photos, ugie, ewere, igue festival, igue, oba of benin, oba erediauwa, award, excellence"
+                      description = "Browse through captured moments from The Benin Ugie Carnival Celebrations"
+              }
+          {/exp:channel:entries}
                 <div class="main-content full-width">
                 <div class="row">
                   <h1 class="page-header bigger extra-pad">Media <a href="/media/photos">Photos</a> <a href="/media/videos">Videos</a></h1>
@@ -99,7 +137,23 @@
                 </div>
           {embed="Main/.footer"}
     {if:else}
-        {embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+        {preload_replace:this_page_channel="media"}
+
+          {exp:channel:entries
+              _cache="yes"
+              disable="category_fields|pagination|member_data"
+              limit="1"
+              refresh="60"
+              status="not closed"
+              track_views="one"
+              channel="{this_page_channel}"
+          }
+
+             {embed="Main/.header"
+                      entry_id="{entry_id}"
+                      canonical_url="{title_permalink="media/photos"}"
+                      image = "{cover_image}"
+              }
             <div class="main-content full-width">
                 <div class="row"><h1 class="page-header extra-pad"><a href="/media/photos">Photos</a></h1></div>
 
@@ -190,13 +244,32 @@
 
             </div>
         {embed="Main/.footer"}
-        <!-->End of Photos Landing Page-->
+        {!--End of Photos Landing Page--}
     {/if}
 
 {if:elseif segment_2 == "videos"}
-    <!--Videos Landing Page-->
+   {!--Videos Landing Page--}
     {if segment_3 ==""}
-          {embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+         {preload_replace:this_page_channel="media"}
+
+          {exp:channel:entries
+              _cache="yes"
+              disable="category_fields|pagination|member_data"
+              limit="1"
+              refresh="60"
+              status="not closed"
+              track_views="one"
+              channel="{this_page_channel}"
+          }
+
+             {embed="Main/.header"
+                      entry_id="{entry_id}"
+                      title = "Videos"
+                      canonical_url="{site_url}media/videos"
+                      keywords = "videos, ugie, carnival, igue, oba of benin, oba erediauwa, sighs and sounds, ugie ewere"
+                      description = "Videos and documentary from The Benin Ugie Carnival"
+              }
+          {/exp:channel:entries}
                  <div class="main-content full-width">
                 <div class="row">
                   <h1 class="page-header bigger extra-pad">Media <a href="/media/photos">Photos</a> <a href="/media/videos">Videos</a></h1>
@@ -231,7 +304,24 @@
                 </div>
           {embed="Main/.footer"}
     {if:else}
-        {embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+        {preload_replace:this_page_channel="media"}
+
+          {exp:channel:entries
+              _cache="yes"
+              disable="category_fields|pagination|member_data"
+              limit="1"
+              refresh="60"
+              status="not closed"
+              track_views="one"
+              channel="{this_page_channel}"
+          }
+
+             {embed="Main/.header"
+                      entry_id="{entry_id}"
+                      canonical_url="{title_permalink="media/photos"}"
+                      image = "{cover_image}"
+              }
+          {/exp:channel:entries}
              <div class="main-content full-width">
                 <div class="row"><h1 class="page-header"><a href="/media/videos">Videos</a></h1></div>
 
@@ -281,5 +371,5 @@
             </div>
         {embed="Main/.footer"}
     {/if}
-    <!--End of Videos Landing Page-->
+    {!--End of Videos Landing Page--}
 {/if}

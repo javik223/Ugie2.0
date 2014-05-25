@@ -1,4 +1,21 @@
-{embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+{preload_replace:this_page_channel="info"}
+
+{exp:channel:entries
+    _cache="yes"
+    disable="category_fields|pagination|member_data"
+    limit="1"
+    refresh="60"
+    status="not closed"
+    track_views="one"
+    channel="{this_page_channel}"
+}
+
+   {embed="Main/.header"
+            entry_id="{entry_id}"
+            title_suffix=""
+            canonical_url="{title_permalink=""}"
+    }
+{/exp:channel:entries}
 
 <div class="main-content full-width info">
     <div class="row">

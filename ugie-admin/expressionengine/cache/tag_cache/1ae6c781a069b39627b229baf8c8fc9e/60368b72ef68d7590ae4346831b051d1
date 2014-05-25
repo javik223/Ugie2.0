@@ -1,0 +1,62 @@
+1401046909
+
+                          <div class="media-small">
+                              <div class="item">
+                                  <a href="http://www.ugie.com/media/videos/ugie-rebranding-documentary" title="Ugie Rebranding Documentary">
+                              
+                                    
+                                              {if "Videos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                                          
+                              
+                                  {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-Carnival-rebranding-documentary.jpg" width="500" height="330" alt="Ugie Rebranding Documentary"}
+
+                                  <h4 class="caption">Ugie Rebranding Documentary</h4>
+                                  </a>
+                              </div>
+                          </div>
+                        
+                          <div class="media-small">
+                              <div class="item">
+                                  <a href="http://www.ugie.com/media/videos/ugie-carnival-queens-visit-to-the-oba-of-benin" title="Ugie Carnival Queen&#8217;s Visit to the Oba of Benin">
+                              
+                                    
+                                              {if "Videos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                                          
+                              
+                                  {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-Carnival-Queens-visit-to-Oba-of-Benin.jpg" width="500" height="330" alt="Ugie Carnival Queen&#8217;s Visit to the Oba of Benin"}
+
+                                  <h4 class="caption">Ugie Carnival Queen&#8217;s Visit to the Oba of Benin</h4>
+                                  </a>
+                              </div>
+                          </div>
+                        
+                          <div class="media-small">
+                              <div class="item">
+                                  <a href="http://www.ugie.com/media/videos/ugie-carnival-celebrations-2012" title="Ugie Carnival Celebrations 2012">
+                              
+                                    
+                                              {if "Videos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                                          
+                              
+                                  {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-Carnival-Celebrations-2012.jpg" width="500" height="330" alt="Ugie Carnival Celebrations 2012"}
+
+                                  <h4 class="caption">Ugie Carnival Celebrations 2012</h4>
+                                  </a>
+                              </div>
+                          </div>
+                        
+                          <div class="media-small">
+                              <div class="item">
+                                  <a href="http://www.ugie.com/media/videos/ugie-carnival-queen-2012" title="Ugie Carnival Queen 2012">
+                              
+                                    
+                                              {if "Videos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                                          
+                              
+                                  {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-carnival-queen-competition-2012.jpg" width="500" height="330" alt="Ugie Carnival Queen 2012"}
+
+                                  <h4 class="caption">Ugie Carnival Queen 2012</h4>
+                                  </a>
+                              </div>
+                          </div>
+                        

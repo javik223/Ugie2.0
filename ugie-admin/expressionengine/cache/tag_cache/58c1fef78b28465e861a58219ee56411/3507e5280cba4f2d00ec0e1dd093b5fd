@@ -1,0 +1,215 @@
+1401046940
+
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/ugie-ewere-celebrations-album-2{if:elseif "1" == "2"}http://www.ugie.com/media/videos/ugie-ewere-celebrations-album-2{/if}" title="Ugie Ewere Celebrations Album 2">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-Ewere-Celebrations.jpg" width="500" height="330" alt="Ugie Ewere Celebrations Album 2"}
+
+                      <h4 class="caption">Ugie Ewere Celebrations Album 2</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/ugie-ewere-celebrations{if:elseif "1" == "2"}http://www.ugie.com/media/videos/ugie-ewere-celebrations{/if}" title="Ugie Ewere Celebrations">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-Ewere-Celebrations-Cover-Image.jpg" width="500" height="330" alt="Ugie Ewere Celebrations"}
+
+                      <h4 class="caption">Ugie Ewere Celebrations</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/art-exhibition-2012{if:elseif "1" == "2"}http://www.ugie.com/media/videos/art-exhibition-2012{/if}" title="Art Exhibition 2012">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Art-Exhibition-2011.jpg" width="500" height="330" alt="Art Exhibition 2012"}
+
+                      <h4 class="caption">Art Exhibition 2012</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/igue-festival-celebrations-day-6-ugie-eeron{if:elseif "1" == "2"}http://www.ugie.com/media/videos/igue-festival-celebrations-day-6-ugie-eeron{/if}" title="Igue Festival Celebrations Day 6 - Ugie Eeron">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-Eeron---Igue-Festival.jpg" width="500" height="330" alt="Igue Festival Celebrations Day 6 - Ugie Eeron"}
+
+                      <h4 class="caption">Igue Festival Celebrations Day 6 - Ugie Eeron</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/igue-festival-celebrations-day-2{if:elseif "1" == "2"}http://www.ugie.com/media/videos/igue-festival-celebrations-day-2{/if}" title="Igue Festival Celebrations Day 2">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Igue-festival-celebrations-day-2.jpg" width="500" height="330" alt="Igue Festival Celebrations Day 2"}
+
+                      <h4 class="caption">Igue Festival Celebrations Day 2</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/igue-festival-celebrations-day-1{if:elseif "1" == "2"}http://www.ugie.com/media/videos/igue-festival-celebrations-day-1{/if}" title="Igue Festival Celebrations Day 1">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Igue-festival-celebrations-day-1.jpg" width="500" height="330" alt="Igue Festival Celebrations Day 1"}
+
+                      <h4 class="caption">Igue Festival Celebrations Day 1</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/traditional-games-at-the-ugie-carnival{if:elseif "1" == "2"}http://www.ugie.com/media/videos/traditional-games-at-the-ugie-carnival{/if}" title="Traditional Games at the Ugie Carnival">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-carnival-traditional-games.jpg" width="500" height="330" alt="Traditional Games at the Ugie Carnival"}
+
+                      <h4 class="caption">Traditional Games at the Ugie Carnival</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/ugie-carnival-celebrations-album-2{if:elseif "1" == "2"}http://www.ugie.com/media/videos/ugie-carnival-celebrations-album-2{/if}" title="Ugie Carnival Celebrations - Album 2">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-Carnival-Celebrations-Album2.jpg" width="500" height="330" alt="Ugie Carnival Celebrations - Album 2"}
+
+                      <h4 class="caption">Ugie Carnival Celebrations - Album 2</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/ugie-carnival-street-celebrations-album-1{if:elseif "1" == "2"}http://www.ugie.com/media/videos/ugie-carnival-street-celebrations-album-1{/if}" title="Ugie Carnival Street Celebrations - Album 1">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Ugie_carnival_celebrations_album_1_cover.jpg" width="500" height="330" alt="Ugie Carnival Street Celebrations - Album 1"}
+
+                      <h4 class="caption">Ugie Carnival Street Celebrations - Album 1</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/oba-erediauwa-award-for-excellence-2012{if:elseif "1" == "2"}http://www.ugie.com/media/videos/oba-erediauwa-award-for-excellence-2012{/if}" title="Oba Erediauwa Award for Excellence 2012">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/AmarachiEmesomiUyannereceivingheraward.jpg" width="500" height="330" alt="Oba Erediauwa Award for Excellence 2012"}
+
+                      <h4 class="caption">Oba Erediauwa Award for Excellence 2012</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "2" == "1"}http://www.ugie.com/media/photos/ugie-rebranding-documentary{if:elseif "2" == "2"}http://www.ugie.com/media/videos/ugie-rebranding-documentary{/if}" title="Ugie Rebranding Documentary">
+                  
+                        
+                                  {if "Videos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-Carnival-rebranding-documentary.jpg" width="500" height="330" alt="Ugie Rebranding Documentary"}
+
+                      <h4 class="caption">Ugie Rebranding Documentary</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+              <div class="media">
+                  <div class="item">
+                      <a href="{if "1" == "1"}http://www.ugie.com/media/photos/oba-erediuwa-award-for-excellence{if:elseif "1" == "2"}http://www.ugie.com/media/videos/oba-erediuwa-award-for-excellence{/if}" title="Oba Erediuwa Award for Excellence">
+                  
+                        
+                                  {if "Photos" == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                              
+                  
+                      {exp:img_resize src="http://www.ugie.com/assets/images/Mrs.AdesuwaOyenokwereceivingheraward.jpg" width="500" height="330" alt="Oba Erediuwa Award for Excellence"}
+
+                      <h4 class="caption">Oba Erediuwa Award for Excellence</h4>
+                      </a>
+                  </div>
+              </div>
+
+              
+              
+                
+                   
+                    
+                        <div class="load-more">
+                            <a href="http://www.ugie.com/media/videos/ugie-carnival-celebrations-2012/P12" class="button round js-load-more">Load more</a>
+                        </div>
+                    
+                
+              
