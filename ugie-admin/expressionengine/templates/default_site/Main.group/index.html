@@ -47,8 +47,10 @@
     <div class="row featured collapse">
         {exp:channel:entries channel="media" limit="3" cache="yes" refresh="60" disable="member_data|pagination"}
             
-
             <div class="featured-item medium-4 column js-fmi">
+            {categories}
+            <a href="{if category_id == 1}{title_permalink="/media/photos"}{if:elseif category_id == 2}{title_permalink="/media/videos"}{/if}" title="{title}">
+            {/categories}
                 {exp:img_resize src="{cover_image}" width="550" height="400" alt="{title}"}
 
                 <div class="featured-item_caption">
@@ -61,6 +63,7 @@
                         {title}
                     </p>
                 </div>
+                </a>
             </div>
         {/exp:channel:entries}
     </div>
@@ -71,6 +74,9 @@
             
 
             <div class="featured-item medium-5 column js-fmi">
+            {categories}
+            <a href="{if category_id == 1}{title_permalink="/media/photos"}{if:elseif category_id == 2}{title_permalink="/media/videos"}{/if}" title="{title}">
+            {/categories}
                 {exp:img_resize src="{cover_image}" width="650" height="733" alt="{title}"}
 
                 <div class="featured-item_caption">
@@ -83,6 +89,7 @@
                         {title}
                     </p>
                 </div>
+                </a>
             </div>
         {/exp:channel:entries}
 
@@ -94,6 +101,9 @@
             
                 <div class="featured-item {if count == 1 || count == 2 } medium-6 {if:else} medium-12 {/if} column js-fmi">
                     {if count == 1 || count == 2}{exp:img_resize src="{cover_image}" width="550" height="413" alt="{title}"}{if:else}{exp:img_resize src="{cover_image}" width="800" height="336" alt="{title}"}{/if}
+                    {categories}
+                    <a href="{if category_id == 1}{title_permalink="/media/photos"}{if:elseif category_id == 2}{title_permalink="/media/videos"}{/if}" title="{title}">
+                    {/categories}
 
                     <div class="featured-item_caption">
                         {categories}
@@ -105,6 +115,7 @@
                             {title}
                         </p>
                     </div>
+                    </a>
                 </div>
             {/exp:channel:entries}
         </div>
@@ -148,15 +159,7 @@
             </div>
 
             <div class="update update-newsletter">
-                <h4>Get Updates</h4>
-
-                <p>Signup to receive the latest Ugie Carnival News, along with special updates and information.</p>
-
-                <form action="">
-                    <input type="email" name="email" placeholder="Enter your email">
-
-                    <input type="submit" value="SIGN UP" class="small button round">
-                </form>
+                {embed="Main/.newsletter-form"}
             </div>
         </div>
         <!--End of Social media udpates and newsletter signup-->

@@ -13,7 +13,7 @@
 
 $config['app_version'] = '271';
 $config['install_lock'] = "";
-$config['debug'] = '1';
+$config['debug'] = "1";
 $config['cp_url'] = 'http://www.ugie.com/ugie-admin/index.php';
 $config['doc_url'] = "http://www.dereferer.com/?http://ellislab.com/expressionengine/user-guide/";
 $config['is_system_on'] = 'y';
@@ -21,8 +21,10 @@ $config['allow_extensions'] = 'y';
 $config['site_label'] = 'Ugie Carnival';
 $config['cookie_prefix'] = '';
 
+$config['doc_url'] = "http://www.dereferer.com/?http://ellislab.com/expressionengine/user-guide/";
 
 // END EE config items
+
 
 /*
 |--------------------------------------------------------------------------

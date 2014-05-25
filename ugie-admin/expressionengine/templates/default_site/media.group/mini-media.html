@@ -1,0 +1,19 @@
+{
+                    "links": [
+                        {exp:channel:entries channel="media" limit="8" backspace="10"}
+                            {
+                                "title": {exp:json_encode}{title}{/exp:json_encode}, 
+                                "cover_image": {exp:json_encode}{exp:img_resize src="{cover_image}" width="500" height="330" alt="{title}"}{/exp:json_encode}, 
+                                "url": {categories}{if category_id == "1"}{exp:json_encode}{title_permalink="/media/photos"}{/exp:json_encode}{if:elseif category_id == "2"}{exp:json_encode}{title_permalink="/media/videos"}{/exp:json_encode}{/if}{/categories}},
+                                {paginate}
+                                    {"nextLink":
+                                    {pagination_links}
+                                        {next_page}
+                                            {exp:json_encode}{pagination_url}{/exp:json_encode}
+                                        {/next_page}
+                                    {/pagination_links}
+                                    }
+                                {/paginate}
+                        {/exp:channel:entries}
+                        ]
+                }

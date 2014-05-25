@@ -27,11 +27,10 @@
             }
             @media #{$large-up} {
                   @include grid-column(
-                        $columns: 4,
+                        $columns: 3,
                         $collapse: true
                   );
             }
-
             img {
                   width: 100%;
                   //opacity: 0.8;
@@ -56,7 +55,7 @@
 
             h4 {
               z-index: 100;
-              font-size: rem-calc(22);
+              font-size: rem-calc(18);
               font-weight: 400;
 
               @media #{$medium-only} {
@@ -79,9 +78,91 @@
            font-weight: $font-weight-normal;
       }
 }
+.media-small {
+      width: 100%;
+      @include transform(translateZ(0));
+
+      [class^="icon-"], [class*=" icon-"] {
+            position: absolute;
+            font-size: rem-calc(40);
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            color: $white;
+            padding: em(10);
+      }
+
+      .item {
+            position: relative;
+            //background-color: rgba($primary-color, 0.6);
+            overflow: hidden;
+            @include animation(fadeIn 1.0s, ease-in);
+            border: 5px solid $white;
+            min-height: rem-calc(260);
+
+            @include grid-column(
+                        $columns: 6,
+                        $collapse: true
+                  );
+
+
+            @media #{$medium-only} {
+                  @include grid-column(
+                        $columns: 3,
+                        $collapse: true
+                  );
+                  min-height: rem-calc(200);
+            }
+            @media #{$large-up} {
+                  @include grid-column(
+                        $columns: 3,
+                        $collapse: true
+                  );
+            }
+
+            @media #{$small-only} {
+              min-height: rem-calc(150);
+            }
+
+            img {
+                  width: 100%;
+                  //opacity: 0.8;
+                  float: left;
+
+                  &:hover {
+                       @include transform(scale(1));
+                       opacity: 0.5;
+                  }
+            }
+
+            h4 {
+              z-index: 100;
+              font-size: rem-calc(14);
+              font-weight: 400;
+
+              @media #{$medium-up} {
+                font-size: rem-calc(16);
+              }
+            }
+
+      }
+
+      @media #{$small-only} {
+            padding-left: em(10);
+            padding-right: em(10);
+      }
+      .caption {
+           position: relative;
+           left: 0;
+           color: $gray;
+           font-weight: $font-weight-normal;
+            margin-top: rem-calc(12);
+            float: left;
+      }
+}
 .media_featured-slider{
       margin-bottom: em(40);
-      margin-top: em(40);
+      margin-top: em(30) !important;
       position: relative;
       min-height: rem-calc(400);
       overflow: hidden;

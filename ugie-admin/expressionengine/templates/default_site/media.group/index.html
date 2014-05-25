@@ -1,11 +1,12 @@
-{embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+{if segment_1 == "media" AND (segment_2 == "" OR (segment_2 >= "P0" AND segment_2 <= "P99999999"))}
+    {embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
        <div class="main-content full-width">
         <div class="row">
-              <h1 class="page-header">Media <a href="/media/photos">Photos</a> <a href="/media/videos">Videos</a></h1>
+              <h1 class="page-header bigger extra-pad">Media <a href="/media/photos">Photos</a> <a href="/media/videos">Videos</a></h1>
 
-               <div class="media_featured-slider row collapse cycle-slideshow" data-cycle-prev=".js-slider-prev" data-cycle-next=".js-slider-next" data-cycle-slides=".js-slider-item">
+               <div class="media_featured-slider row collapse cycle-slideshow" data-cycle-prev=".js-slider-prev" data-cycle-next=".js-slider-next" data-cycle-slides=".js-slider-item" data-cycle-auto-height="container">
                   
-                  {exp:channel:entries channel="media" limit="3" disable="member_data|pagination"}
+                  {exp:channel:entries channel="media" limit="3" disable="member_data|pagination" dynamic="no"}
                   <div class="media_featured-slider-item js-slider-item">
                       <div class="media_featured-slider_image medium-8 column">
                       {exp:img_resize src="{cover_image}" width="1000" height="600" alt="{title}"}
@@ -29,10 +30,10 @@
                   </div>
               </div>
 
-              {exp:channel:entries channel="media" limit="6" cache="yes" refresh="60" disable="member_data"}
+              {exp:channel:entries channel="media" limit="12" cache="yes" refresh="60" disable="member_data"}
               <div class="media">
                   <div class="item">
-                      <a href="{title_permalink=/media}" title="{title}">
+                      <a href="{categories}{if category_id == "1"}{title_permalink=/media/photos}{if:elseif category_id == "2"}{title_permalink=/media/videos}{/if}{/categories}" title="{title}">
                   
                         {categories}
                                   {if category_name == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
@@ -44,7 +45,241 @@
                       </a>
                   </div>
               </div>
+
+              {paginate}
+                {pagination_links}
+                   
+                    {next_page}
+                        <div class="load-more">
+                            <a href="{pagination_url}" class="button round js-load-more">Load more</a>
+                        </div>
+                    {/next_page}
+                {/pagination_links}
+              {/paginate}
               {/exp:channel:entries}
         </div>
         </div>
 {embed="Main/.footer"}
+
+{if:elseif segment_2 == "photos"}
+    <!--Photos Landing Page-->
+    {if segment_3 ==""}
+          {embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+                <div class="main-content full-width">
+                <div class="row">
+                  <h1 class="page-header bigger extra-pad">Media <a href="/media/photos">Photos</a> <a href="/media/videos">Videos</a></h1>
+
+                  {exp:channel:entries channel="media" limit="12" cache="yes" refresh="60" disable="member_data" category="1"}
+                  <div class="media">
+                      <div class="item">
+                          <a href="{title_permalink=/media/photos}" title="{title}">
+                      
+                            {categories}
+                                      {if category_name == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                                  {/categories}
+                      
+                          {exp:img_resize src="{cover_image}" width="500" height="330" alt="{title}"}
+
+                          <h4 class="caption">{title}</h4>
+                          </a>
+                      </div>
+                  </div>
+                  {paginate}
+                    {pagination_links}
+                       
+                        {next_page}
+                            <div class="load-more">
+                                <a href="{pagination_url}" class="button round js-load-more">Load more</a>
+                            </div>
+                        {/next_page}
+                    {/pagination_links}
+                  {/paginate}
+                {/exp:channel:entries}
+                </div>
+                </div>
+          {embed="Main/.footer"}
+    {if:else}
+        {embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+            <div class="main-content full-width">
+                <div class="row"><h1 class="page-header extra-pad"><a href="/media/photos">Photos</a></h1></div>
+
+                <div class="row collapse">
+                {exp:channel:entries channel="media" limit="1" disable="pagination|member_data" url_title="{segment_3}"}
+                    <div class="small-10 medium-8 column">
+                        <h2 class="extra-pad">{title}</h2>
+                    </div>
+
+                    <div class="small-10 medium-8 column">
+                        <p>{synopsis}</p>
+                    </div>
+                    {/exp:channel:entries}
+
+                    <div class="carousel owl-carousel">
+                      {exp:channel:entries channel="media" limit="1" disable="pagination|member_data" url_title="{segment_3}"}
+                            {images}
+                        <a href="{image}" title="{image_title}" class="js-slideshow">
+                                {exp:img_resize src="{image}" width="200" height="150" alt="{image_title}" class="lazyOwl"}
+                            </a>
+                            {/images}
+                        {/exp:channel:entries}
+                    </div>
+                </div>
+                    
+                <div class="row">
+                    <div class="main-image js-slideshow-container">
+                    {exp:channel:entries channel="media" limit="1" disable="pagination|member_data" url_title="{segment_3}"}
+                        {images limit="1"}
+                          {exp:img_resize src="{image}" max_height="700" alt="{title}"}
+                        {/images}
+                    {/exp:channel:entries}
+
+                    <div id="fountainG">
+                        <div id="fountainG_1" class="fountainG">
+                        </div>
+                        <div id="fountainG_2" class="fountainG">
+                        </div>
+                        <div id="fountainG_3" class="fountainG">
+                        </div>
+                        <div id="fountainG_4" class="fountainG">
+                        </div>
+                        <div id="fountainG_5" class="fountainG">
+                        </div>
+                        <div id="fountainG_6" class="fountainG">
+                        </div>
+                        <div id="fountainG_7" class="fountainG">
+                        </div>
+                        <div id="fountainG_8" class="fountainG">
+                        </div>
+                        </div> 
+                    </div>
+                </div>
+
+                    <div class="row more-content">
+                        <h3 class="extra-pad">More photos from the Ugie Festival Gallery</h3>
+
+                        
+                          {exp:channel:entries channel="media" limit="12" cache="yes" refresh="60" disable="member_data" category="1"}
+                          <div class="media-small">
+                              <div class="item">
+                                  <a href="{title_permalink=/media/photos}" title="{title}">
+                              
+                                    {categories}
+                                              {if category_name == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                                          {/categories}
+                              
+                                  {exp:img_resize src="{cover_image}" width="500" height="330" alt="{title}"}
+
+                                  <h4 class="caption">{title}</h4>
+                                  </a>
+                              </div>
+                          </div>
+                          {paginate}
+                            {pagination_links}
+                               
+                                {next_page}
+                                    <div class="load-more">
+                                        <a href="{pagination_url}" class="button round js-load-more">Load more</a>
+                                    </div>
+                                {/next_page}
+                            {/pagination_links}
+                          {/paginate}
+                        {/exp:channel:entries}
+                    </div>
+
+                </div>
+
+            </div>
+        {embed="Main/.footer"}
+        <!-->End of Photos Landing Page-->
+    {/if}
+
+{if:elseif segment_2 == "videos"}
+    <!--Videos Landing Page-->
+    {if segment_3 ==""}
+          {embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+                 <div class="main-content full-width">
+                <div class="row">
+                  <h1 class="page-header bigger extra-pad">Media <a href="/media/photos">Photos</a> <a href="/media/videos">Videos</a></h1>
+
+                  {exp:channel:entries channel="media" limit="12" cache="yes" refresh="60" disable="member_data" category="2"}
+                  <div class="media">
+                      <div class="item">
+                          <a href="{title_permalink=/media/videos}" title="{title}">
+                      
+                            {categories}
+                                      {if category_name == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                                  {/categories}
+                      
+                          {exp:img_resize src="{cover_image}" width="500" height="330" alt="{title}"}
+
+                          <h4 class="caption">{title}</h4>
+                          </a>
+                      </div>
+                  </div>
+                  {paginate}
+                    {pagination_links}
+                       
+                        {next_page}
+                            <div class="load-more">
+                                <a href="{pagination_url}" class="button round js-load-more">Load more</a>
+                            </div>
+                        {/next_page}
+                    {/pagination_links}
+                  {/paginate}
+                {/exp:channel:entries}
+                </div>
+                </div>
+          {embed="Main/.footer"}
+    {if:else}
+        {embed="Main/.header" canonical_url="http://www.ugiecarnival.com"}
+             <div class="main-content full-width">
+                <div class="row"><h1 class="page-header"><a href="/media/videos">Videos</a></h1></div>
+
+                <div class="row collapse">
+                    {exp:channel:entries channel="media" limit="1" disable="pagination|member_data" url_title="{segment_3}"}
+                    <div class="small-10 medium-6 column">
+                        <h2>{title}</h2>
+                    </div>
+
+                    <div class="small-12 medium-8 medium-pull-4 column">
+                        <p>{synopsis}</p>
+                    </div>
+                </div>
+                    
+                <div class="row">
+                    <div class="main-image">
+                    
+                        {video width="1100" height="600" default_size="no" default_size="yes"}
+                    {/exp:channel:entries}
+                    </div>
+                </div>
+
+                    <div class="row more-content">
+                        <h3>More Clips from the Ugie Festival Gallery</h3>
+
+                        
+                          {exp:channel:entries channel="media" limit="12" cache="yes" refresh="60" disable="member_data" category="2"}
+                          <div class="media-small">
+                              <div class="item">
+                                  <a href="{title_permalink=/media/videos}" title="{title}">
+                              
+                                    {categories}
+                                              {if category_name == "Videos"} <span class="icon-play">&nbsp;</span> {/if}
+                                          {/categories}
+                              
+                                  {exp:img_resize src="{cover_image}" width="500" height="330" alt="{title}"}
+
+                                  <h4 class="caption">{title}</h4>
+                                  </a>
+                              </div>
+                          </div>
+                        {/exp:channel:entries}
+                    </div>
+
+                </div>
+
+            </div>
+        {embed="Main/.footer"}
+    {/if}
+    <!--End of Videos Landing Page-->
+{/if}

@@ -2,8 +2,8 @@
             @include grid-row();
             //background-color: $white;
             padding-top: rem-calc(30);
-            padding-left: em(20);
-            padding-right: em(20);
+            //padding-left: em(20);
+            //padding-right: em(20);
 
             &.full-width {
                   max-width: 100% !important;
@@ -23,6 +23,7 @@
             }
 }
 .main-area {
+
       @media #{$medium-up} {
             @include grid-column(
                 $columns: 7.5
@@ -47,8 +48,16 @@
         font-weight: 400;
         color: $secondary-color;
       }
+
+      @media #{$small-only} {
+        h1,h2,h3,h4,h5,h6,p,span {
+            padding-left: rem-calc(20);
+            padding-right: rem-calc(20);
+        }
+      }
 }
 .sidebar {
+    position: relative;
       @media #{$medium-only} {
              @include grid-column(
                   $columns: 12,
@@ -63,7 +72,18 @@
      }
 }
 .sub-side-nav {
-  @media #{$medium-up} {
+  position: relative;
+
+   @media #{$medium-only} {
+            @include grid-column(
+            $columns: 3,
+            $collapse: true
+        );
+        padding-left: rem-calc(30);
+        padding-right: rem-calc(30);
+     }
+
+  @media #{$large-up} {
             @include grid-column(
             $columns: 2,
             $collapse: true
@@ -119,10 +139,29 @@
 
             }
         } 
+        &.mobile-show-block {
+          @media #{$small-only} {
+            position: absolute;
+            background-color: $white;
+            width: 120%;
+            padding: 0 rem-calc(40);
+            margin-left: (-10%);
+            border-bottom: 5px solid $primary-color;
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            z-index: 10000;
+          }
+        }
      }
+
 }
 .main-area, .sub-side-nav, .sidebar {
     padding-top: rem-calc(40);
+
+    @media #{$small-only} {
+      padding-top: 0;
+    }
 }
 .side-image {
     background-color: lighten($gray, 30%);
@@ -139,4 +178,43 @@
         font-size: em(12);
         font-style: italic;
     }
+}
+.main-image {
+  text-align: center;
+  background-color: lighten($gray, 37%);
+  overflow: hidden;
+  perspective: 300px;
+  position: relative;
+
+  @include grid-column(
+    $columns: 12,
+    $center: true
+    );
+  margin-bottom: rem-calc(40);
+
+  max-height: 600px;
+
+  img {
+    max-height: 100%;
+    width: auto;
+    @include inline-block;
+    @include transform(translateZ(0));
+    -webkit-backface-visibility: hidden;
+  }
+
+  iframe {
+    max-width: 100%;
+
+    @media #{$medium-only} {
+      height: rem-calc(500);
+    }
+
+    @media #{$small-only} {
+      height: rem-calc(300);
+    }
+  }
+
+}
+.more-content {
+
 }

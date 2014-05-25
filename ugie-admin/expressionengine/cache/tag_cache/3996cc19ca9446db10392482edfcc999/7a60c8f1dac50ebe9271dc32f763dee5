@@ -1,0 +1,62 @@
+1401042123
+
+            
+            <div class="featured-item medium-4 column js-fmi">
+            
+            <a href="{if "1" == 1}http://www.ugie.com/media/photos/ugie-ewere-celebrations-album-2{if:elseif "1" == 2}http://www.ugie.com/media/videos/ugie-ewere-celebrations-album-2{/if}" title="Ugie Ewere Celebrations Album 2">
+            
+                {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-Ewere-Celebrations.jpg" width="550" height="400" alt="Ugie Ewere Celebrations Album 2"}
+
+                <div class="featured-item_caption">
+                    
+                        {if "Photos" == "Photos"} <h5>Photos</h5> {/if}
+                        {if "Photos" == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                    
+
+                    <p>
+                        Ugie Ewere Celebrations Album 2
+                    </p>
+                </div>
+                </a>
+            </div>
+        
+            
+            <div class="featured-item medium-4 column js-fmi">
+            
+            <a href="{if "1" == 1}http://www.ugie.com/media/photos/ugie-ewere-celebrations{if:elseif "1" == 2}http://www.ugie.com/media/videos/ugie-ewere-celebrations{/if}" title="Ugie Ewere Celebrations">
+            
+                {exp:img_resize src="http://www.ugie.com/assets/images/Ugie-Ewere-Celebrations-Cover-Image.jpg" width="550" height="400" alt="Ugie Ewere Celebrations"}
+
+                <div class="featured-item_caption">
+                    
+                        {if "Photos" == "Photos"} <h5>Photos</h5> {/if}
+                        {if "Photos" == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                    
+
+                    <p>
+                        Ugie Ewere Celebrations
+                    </p>
+                </div>
+                </a>
+            </div>
+        
+            
+            <div class="featured-item medium-4 column js-fmi">
+            
+            <a href="{if "1" == 1}http://www.ugie.com/media/photos/art-exhibition-2012{if:elseif "1" == 2}http://www.ugie.com/media/videos/art-exhibition-2012{/if}" title="Art Exhibition 2012">
+            
+                {exp:img_resize src="http://www.ugie.com/assets/images/Art-Exhibition-2011.jpg" width="550" height="400" alt="Art Exhibition 2012"}
+
+                <div class="featured-item_caption">
+                    
+                        {if "Photos" == "Photos"} <h5>Photos</h5> {/if}
+                        {if "Photos" == "Videos"} <h5><span class="icon-play">&nbsp;</span></h5> {/if}
+                    
+
+                    <p>
+                        Art Exhibition 2012
+                    </p>
+                </div>
+                </a>
+            </div>
+        
